@@ -1,0 +1,1776 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/>
+  <meta content="TaxPro Consultants - Pakistan Tax, FBR, SRB, SECP Advisory Portal" name="description"/>
+  <meta content="TaxPro Consultants" name="author"/>
+  <title>TaxPro Consultants | Premier Tax & Corporate Advisory in Pakistan</title>
+
+  <!-- Google Fonts & Material Symbols -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "surface-bright": "#faf8ff",
+            "background": "#faf8ff",
+            "on-error-container": "#93000a",
+            "error-container": "#ffdad6",
+            "secondary-fixed-dim": "#68dba9",
+            "on-secondary-container": "#00714e",
+            "secondary": "#006c4a",
+            "tertiary-container": "#a73400",
+            "outline": "#747686",
+            "surface-container-highest": "#dae2fd",
+            "on-tertiary-fixed": "#390c00",
+            "on-background": "#131b2e",
+            "primary": "#0037b0",
+            "surface-dim": "#d2d9f4",
+            "surface-container-lowest": "#ffffff",
+            "on-surface-variant": "#434655",
+            "surface-variant": "#dae2fd",
+            "tertiary-fixed": "#ffdbcf",
+            "on-primary-fixed": "#001551",
+            "on-secondary-fixed-variant": "#005137",
+            "outline-variant": "#c4c5d7",
+            "inverse-surface": "#283044",
+            "primary-fixed-dim": "#b7c4ff",
+            "tertiary-fixed-dim": "#ffb59c",
+            "on-primary": "#ffffff",
+            "secondary-container": "#82f5c1",
+            "inverse-primary": "#b7c4ff",
+            "primary-fixed": "#dce1ff",
+            "on-secondary-fixed": "#002114",
+            "surface-container-high": "#e2e7ff",
+            "tertiary": "#7f2500",
+            "on-tertiary-fixed-variant": "#832700",
+            "surface-container": "#eaedff",
+            "on-error": "#ffffff",
+            "on-primary-fixed-variant": "#0039b5",
+            "inverse-on-surface": "#eef0ff",
+            "surface-tint": "#2151da",
+            "on-primary-container": "#cad3ff",
+            "surface-container-low": "#f2f3ff",
+            "secondary-fixed": "#85f8c4",
+            "on-secondary": "#ffffff",
+            "error": "#ba1a1a",
+            "primary-container": "#1d4ed8",
+            "on-tertiary-container": "#ffc9b7",
+            "on-tertiary": "#ffffff",
+            "surface": "#faf8ff",
+            "on-surface": "#131b2e"
+          },
+          borderRadius: {
+            "DEFAULT": "0.125rem",
+            "lg": "0.25rem",
+            "xl": "0.5rem",
+            "full": "0.75rem"
+          },
+          spacing: {
+            "space-lg": "1.5rem",
+            "space-md": "1rem",
+            "space-xs": "0.25rem",
+            "space-sm": "0.5rem",
+            "margin-mobile": "1rem",
+            "gutter": "1.5rem",
+            "margin": "2rem",
+            "gutter-mobile": "1rem",
+            "space-xl": "2.5rem"
+          },
+          fontFamily: {
+            "headline-lg": ["Inter", "sans-serif"],
+            "display-hero-mobile": ["Inter", "sans-serif"],
+            "headline-md": ["Inter", "sans-serif"],
+            "label-sm": ["Inter", "sans-serif"],
+            "title-md": ["Inter", "sans-serif"],
+            "label-md": ["Inter", "sans-serif"],
+            "body-md": ["Inter", "sans-serif"],
+            "stat-numeric": ["Inter", "sans-serif"],
+            "body-lg": ["Inter", "sans-serif"],
+            "headline-lg-mobile": ["Inter", "sans-serif"],
+            "headline-sm": ["Inter", "sans-serif"],
+            "body-sm": ["Inter", "sans-serif"],
+            "display-hero": ["Inter", "sans-serif"]
+          },
+          fontSize: {
+            "headline-lg": ["2rem", { "lineHeight": "2.5rem", "letterSpacing": "-0.02em", "fontWeight": "600" }],
+            "display-hero-mobile": ["2.25rem", { "lineHeight": "2.75rem", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+            "headline-md": ["1.5rem", { "lineHeight": "2rem", "letterSpacing": "-0.015em", "fontWeight": "600" }],
+            "label-sm": ["0.75rem", { "lineHeight": "1rem", "letterSpacing": "0.025em", "fontWeight": "600" }],
+            "title-md": ["1rem", { "lineHeight": "1.5rem", "fontWeight": "600" }],
+            "label-md": ["0.875rem", { "lineHeight": "1.25rem", "fontWeight": "500" }],
+            "body-md": ["0.875rem", { "lineHeight": "1.375rem", "fontWeight": "400" }],
+            "stat-numeric": ["1.75rem", { "lineHeight": "2.25rem", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+            "body-lg": ["1.125rem", { "lineHeight": "1.75rem", "fontWeight": "400" }],
+            "headline-lg-mobile": ["1.5rem", { "lineHeight": "2rem", "letterSpacing": "-0.015em", "fontWeight": "600" }],
+            "headline-sm": ["1.25rem", { "lineHeight": "1.75rem", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "body-sm": ["0.75rem", { "lineHeight": "1.125rem", "fontWeight": "400" }],
+            "display-hero": ["3.5rem", { "lineHeight": "4rem", "letterSpacing": "-0.025em", "fontWeight": "700" }]
+          }
+        }
+      }
+    };
+  </script>
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+
+<body class="bg-surface font-body-md text-on-surface flex flex-col min-h-screen relative selection:bg-primary-fixed">
+
+  <!-- ==================== HEADER ==================== -->
+  <header class="fixed top-0 w-full z-50 pt-safe bg-surface-container-lowest/90 backdrop-blur-xl border-b border-surface-container shadow-[0_1px_8px_rgba(0,0,0,0.04)]">
+    <div class="h-16 px-gutter-mobile flex items-center justify-between max-w-6xl mx-auto w-full">
+      <!-- Left: Mobile Menu & Brand -->
+      <div class="flex items-center gap-space-sm">
+        <button aria-label="Open Navigation Menu" class="w-11 h-11 flex items-center justify-center rounded-lg text-on-surface hover:bg-surface-container transition-colors" id="menu-open-btn" onclick="openDrawer()">
+          <span class="material-symbols-outlined text-[24px]">menu</span>
+        </button>
+        <div class="flex items-center gap-space-xs cursor-pointer" onclick="scrollToSection('hero')">
+          <div class="w-9 h-9 rounded-lg bg-primary-container text-on-primary flex items-center justify-center font-bold text-lg shadow-sm">
+            <span class="material-symbols-outlined text-[22px]">account_balance</span>
+          </div>
+          <div class="flex flex-col">
+            <span class="font-title-md text-title-md text-primary tracking-tight font-bold">TaxPro</span>
+            <span class="text-[10px] text-on-surface-variant -mt-1 font-medium hidden sm:inline">Consultants Pakistan</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Center: Desktop Navigation Links -->
+      <nav class="hidden md:flex items-center gap-6">
+        <a href="#services-section" onclick="scrollToSection('services-section'); return false;" class="text-on-surface font-label-md hover:text-primary transition-colors">Services</a>
+        <a href="#calculator-section" onclick="scrollToSection('calculator-section'); return false;" class="text-on-surface font-label-md hover:text-primary transition-colors">Tax Calculator</a>
+        <a href="#industries-section" onclick="scrollToSection('industries-section'); return false;" class="text-on-surface font-label-md hover:text-primary transition-colors">Industries</a>
+        <a href="#resources-section" onclick="scrollToSection('resources-section'); return false;" class="text-on-surface font-label-md hover:text-primary transition-colors">Resources</a>
+        <a href="#contact-section" onclick="scrollToSection('contact-section'); return false;" class="text-on-surface font-label-md hover:text-primary transition-colors">Consultation</a>
+      </nav>
+
+      <!-- Right: Dark Mode Toggle, Book CTA, Profile -->
+      <div class="flex items-center gap-2">
+        <button aria-label="Toggle Theme" onclick="toggleTheme()" class="w-9 h-9 flex items-center justify-center rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" title="Toggle Light/Dark Theme">
+          <span class="material-symbols-outlined theme-toggle-icon text-[20px]">dark_mode</span>
+        </button>
+        
+        <button onclick="scrollToSection('consultation-wizard')" class="flex items-center gap-1.5 px-3.5 py-2 bg-secondary text-on-secondary rounded-lg font-label-md text-label-md transition-all hover:opacity-95 shadow-sm active:scale-95">
+          <span class="material-symbols-outlined text-[18px]">event_available</span>
+          <span class="font-semibold">Book</span>
+        </button>
+
+        <div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center text-on-primary shadow-sm" title="Verified Portal Client">
+          <span class="material-symbols-outlined text-[18px]">verified_user</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==================== SIDE NAVIGATION DRAWER ==================== -->
+  <div class="fixed inset-0 z-50 bg-inverse-surface/50 backdrop-blur-sm hidden" id="drawer-backdrop" onclick="closeDrawer()"></div>
+  <aside class="fixed inset-y-0 left-0 z-50 w-4/5 max-w-xs bg-surface-container-lowest shadow-2xl flex flex-col justify-between pt-safe pb-safe -translate-x-full border-r border-surface-container" id="mobile-drawer">
+    <div class="flex flex-col">
+      <!-- Drawer Header -->
+      <div class="h-16 px-gutter-mobile flex items-center justify-between border-b border-surface-container">
+        <div class="flex items-center gap-2">
+          <div class="w-8 h-8 rounded-lg bg-primary-container text-on-primary flex items-center justify-center font-bold">
+            <span class="material-symbols-outlined text-[20px]">account_balance</span>
+          </div>
+          <span class="font-title-md text-title-md text-on-surface font-bold">TaxPro Portal</span>
+        </div>
+        <button aria-label="Close Navigation Menu" class="w-10 h-10 flex items-center justify-center rounded-lg text-on-surface-variant hover:bg-surface-container" id="menu-close-btn" onclick="closeDrawer()">
+          <span class="material-symbols-outlined text-[22px]">close</span>
+        </button>
+      </div>
+
+      <!-- Active Pill -->
+      <div class="px-space-md py-space-sm">
+        <div class="flex items-center gap-space-xs px-space-sm py-1.5 rounded-lg bg-secondary/10 text-secondary font-label-sm text-label-sm">
+          <span class="w-2 h-2 rounded-full bg-secondary inline-block animate-pulse"></span>
+          <span class="font-semibold">FBR & SRB Authorized Advisors</span>
+        </div>
+      </div>
+
+      <!-- Navigation Links -->
+      <nav class="flex flex-col px-space-sm mt-space-xs gap-1">
+        <button onclick="scrollToSection('hero')" class="w-full flex items-center gap-space-md px-space-md py-3 rounded-lg text-on-surface font-title-md text-title-md hover:bg-surface-container transition-colors text-left">
+          <span class="material-symbols-outlined text-primary">home</span>
+          <span>Home</span>
+        </button>
+        <button onclick="scrollToSection('services-section')" class="w-full flex items-center gap-space-md px-space-md py-3 rounded-lg text-on-surface font-title-md text-title-md hover:bg-surface-container transition-colors text-left">
+          <span class="material-symbols-outlined text-primary">receipt_long</span>
+          <span>Statutory Services</span>
+        </button>
+        <button onclick="scrollToSection('calculator-section')" class="w-full flex items-center gap-space-md px-space-md py-3 rounded-lg text-on-surface font-title-md text-title-md hover:bg-surface-container transition-colors text-left">
+          <span class="material-symbols-outlined text-primary">calculate</span>
+          <span>Tax Calculator 2025</span>
+        </button>
+        <button onclick="scrollToSection('industries-section')" class="w-full flex items-center gap-space-md px-space-md py-3 rounded-lg text-on-surface font-title-md text-title-md hover:bg-surface-container transition-colors text-left">
+          <span class="material-symbols-outlined text-primary">domain</span>
+          <span>Industries</span>
+        </button>
+        <button onclick="scrollToSection('consultation-wizard')" class="w-full flex items-center gap-space-md px-space-md py-3 rounded-lg text-on-surface font-title-md text-title-md hover:bg-surface-container transition-colors text-left">
+          <span class="material-symbols-outlined text-primary">event_available</span>
+          <span>Book Consultation</span>
+        </button>
+        <button onclick="scrollToSection('resources-section')" class="w-full flex items-center gap-space-md px-space-md py-3 rounded-lg text-on-surface font-title-md text-title-md hover:bg-surface-container transition-colors text-left">
+          <span class="material-symbols-outlined text-primary">folder_shared</span>
+          <span>Knowledge Base</span>
+        </button>
+        <button onclick="scrollToSection('contact-section')" class="w-full flex items-center gap-space-md px-space-md py-3 rounded-lg text-on-surface font-title-md text-title-md hover:bg-surface-container transition-colors text-left">
+          <span class="material-symbols-outlined text-primary">support_agent</span>
+          <span>Consultation & Advisory</span>
+        </button>
+      </nav>
+    </div>
+
+    <!-- Drawer Footer Actions -->
+    <div class="p-space-md flex flex-col gap-space-sm border-t border-surface-container">
+      <button onclick="scrollToSection('consultation-wizard')" class="w-full h-11 flex items-center justify-center gap-space-xs bg-primary text-on-primary font-label-md text-label-md rounded-lg shadow-md hover:bg-primary-container transition-colors">
+        <span class="material-symbols-outlined text-[20px]">calendar_month</span>
+        <span>Schedule Session</span>
+      </button>
+      <div class="flex items-center justify-between px-space-xs text-on-surface-variant font-label-sm text-label-sm">
+        <span>FBR Iris & SECP</span>
+        <span class="font-semibold text-secondary flex items-center gap-1">
+          <span class="material-symbols-outlined text-[14px]">check_circle</span> Active ATL
+        </span>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ==================== MAIN CONTENT ==================== -->
+  <main class="flex flex-col relative w-full pt-16 pb-24 bg-surface min-h-[calc(100vh-4rem)] max-w-4xl mx-auto">
+    <div class="flex flex-col w-full text-on-surface">
+
+      <!-- 1. HERO SECTION -->
+      <section class="px-gutter-mobile py-space-md flex flex-col gap-space-md" id="hero">
+        <!-- Authority Pill Badge -->
+        <div class="flex items-center gap-space-xs px-3 py-1.5 rounded-full bg-secondary-container/40 text-on-secondary-container self-start shadow-sm border border-secondary/20">
+          <span class="material-symbols-outlined text-[16px] text-secondary">verified_user</span>
+          <span class="font-label-sm text-label-sm tracking-wide font-semibold">Leading Tax & Financial Advisory in Pakistan</span>
+        </div>
+
+        <!-- Core Title & Narrative -->
+        <div class="flex flex-col gap-space-xs">
+          <h1 class="font-headline-lg-mobile text-headline-lg-mobile md:text-headline-lg text-primary tracking-tight font-bold">
+            Smart Tax Solutions. Stronger Businesses.
+          </h1>
+          <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            Professional tax consultancy, regulatory compliance (FBR, SRB, PRA, SECP), and strategic financial structuring for individuals, high-growth startups, and corporate enterprises across Pakistan.
+          </p>
+        </div>
+
+        <!-- Hero Actions -->
+        <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-space-sm pt-space-xs">
+          <button class="h-12 px-6 rounded-xl bg-primary text-on-primary font-label-md text-label-md flex items-center justify-center gap-2 shadow-md hover:bg-primary-container active:scale-[0.99] transition-all" onclick="scrollToSection('consultation-wizard')">
+            <span class="material-symbols-outlined text-[20px]">calendar_month</span>
+            <span>Book a Consultation</span>
+          </button>
+          <button class="h-12 px-6 rounded-xl bg-surface-container text-primary font-label-md text-label-md flex items-center justify-center gap-2 hover:bg-surface-container-high transition-all" onclick="scrollToSection('services-section')">
+            <span class="material-symbols-outlined text-[20px]">account_balance_wallet</span>
+            <span>Explore Services</span>
+          </button>
+        </div>
+
+        <!-- Interactive Live Tax & Compliance Dashboard Preview -->
+        <div class="mt-space-sm rounded-xl bg-surface-container-lowest p-space-md shadow-md flex flex-col gap-space-md border border-surface-container">
+          <!-- Dashboard Header -->
+          <div class="flex items-center justify-between pb-space-xs border-b border-surface-container">
+            <div class="flex items-center gap-2">
+              <div class="w-2.5 h-2.5 rounded-full bg-secondary animate-pulse"></div>
+              <span class="font-label-md text-label-md font-semibold text-on-surface">Client Tax Portal Live Preview</span>
+            </div>
+            <span class="font-label-sm text-label-sm px-2.5 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-semibold">Active ATL</span>
+          </div>
+
+          <!-- Compliance Metrics Bento Grid -->
+          <div class="grid grid-cols-2 gap-space-sm">
+            <div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col gap-1 border border-surface-container/60">
+              <span class="font-label-sm text-label-sm text-on-surface-variant">Tax Filing Status</span>
+              <span class="font-title-md text-title-md font-bold text-primary">TY 2024 Filed</span>
+              <div class="flex items-center gap-1 text-secondary font-label-sm text-label-sm mt-0.5">
+                <span class="material-symbols-outlined text-[14px]">check_circle</span>
+                <span>Iris FBR Verified</span>
+              </div>
+            </div>
+            <div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col gap-1 border border-surface-container/60">
+              <span class="font-label-sm text-label-sm text-on-surface-variant">Audit Readiness</span>
+              <span class="font-stat-numeric text-stat-numeric text-secondary font-bold">98%</span>
+              <div class="w-full bg-surface-container-highest rounded-full h-1.5 mt-1 overflow-hidden">
+                <div class="bg-secondary h-1.5 rounded-full" style="width: 98%"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Approaching Statutory Deadline Card -->
+          <div class="p-space-sm rounded-lg bg-surface-container flex items-start gap-space-sm">
+            <div class="w-8 h-8 rounded-full bg-tertiary-fixed flex items-center justify-center flex-shrink-0 text-tertiary">
+              <span class="material-symbols-outlined text-[18px]">event_upcoming</span>
+            </div>
+            <div class="flex flex-col flex-1 min-w-0">
+              <div class="flex items-center justify-between">
+                <span class="font-label-md text-label-md font-bold text-on-surface">FBR Monthly WHT Statement</span>
+                <span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-tertiary-container text-on-tertiary-container font-semibold">Due 15th</span>
+              </div>
+              <span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Section 165 e-filing & CPR cross-verification for current period</span>
+            </div>
+          </div>
+
+          <!-- Quick Verified Credentials -->
+          <div class="flex flex-wrap gap-2 pt-space-xs">
+            <div class="flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-surface-container-high text-on-surface font-label-sm text-label-sm">
+              <span class="material-symbols-outlined text-[16px] text-primary">badge</span>
+              <span>NTN: 8940211-7</span>
+            </div>
+            <div class="flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-surface-container-high text-on-surface font-label-sm text-label-sm">
+              <span class="material-symbols-outlined text-[16px] text-primary">receipt_long</span>
+              <span>CPR Matched</span>
+            </div>
+            <div class="flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-surface-container-high text-on-surface font-label-sm text-label-sm">
+              <span class="material-symbols-outlined text-[16px] text-secondary">verified</span>
+              <span>SRB Active</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 2. SERVICES SECTION -->
+      <section class="px-gutter-mobile py-space-lg flex flex-col gap-space-md" id="services-section">
+        <div class="flex flex-col gap-1">
+          <div class="flex items-center gap-1 text-primary font-label-sm text-label-sm uppercase tracking-wider font-semibold">
+            <span class="material-symbols-outlined text-[16px]">domain_verification</span>
+            <span>Statutory Capabilities</span>
+          </div>
+          <h2 class="font-headline-md text-headline-md font-bold text-on-surface">Our Tax & Business Services</h2>
+          <p class="font-body-md text-body-md text-on-surface-variant">
+            Comprehensive fiscal compliance designed for Pakistani regulatory frameworks (FBR, SRB, PRA, SECP).
+          </p>
+        </div>
+
+        <!-- 8 Services Cards Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-space-sm" id="services-grid">
+          <!-- 1: Income Tax -->
+          <div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between gap-space-sm hover:shadow-md transition-all border border-surface-container">
+            <div class="flex items-start gap-space-sm">
+              <div class="w-11 h-11 rounded-lg bg-primary-fixed flex items-center justify-center text-primary flex-shrink-0">
+                <span class="material-symbols-outlined text-[24px]">account_balance</span>
+              </div>
+              <div class="flex flex-col flex-1">
+                <h3 class="font-title-md text-title-md font-bold text-on-surface">Income Tax Advisory</h3>
+                <p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Individual & corporate return filing, wealth reconciliation statements, section 147 advance tax computations.</p>
+              </div>
+            </div>
+            <button class="self-start text-primary font-label-md text-label-md flex items-center gap-1 hover:gap-2 transition-all" onclick="openServiceDetail(0)">
+              <span>Learn Scope & Deliverables</span>
+              <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+            </button>
+          </div>
+
+          <!-- 2: Sales Tax & GST -->
+          <div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between gap-space-sm hover:shadow-md transition-all border border-surface-container">
+            <div class="flex items-start gap-space-sm">
+              <div class="w-11 h-11 rounded-lg bg-secondary-fixed flex items-center justify-center text-secondary flex-shrink-0">
+                <span class="material-symbols-outlined text-[24px]">receipt</span>
+              </div>
+              <div class="flex flex-col flex-1">
+                <h3 class="font-title-md text-title-md font-bold text-on-surface">Sales Tax & GST</h3>
+                <p class="font-body-sm text-body-sm text-on-surface-variant mt-1">FBR Federal Sales Tax & provincial GST registrations (SRB, PRA, KPRA, BRA), monthly Annexure e-filing.</p>
+              </div>
+            </div>
+            <button class="self-start text-primary font-label-md text-label-md flex items-center gap-1 hover:gap-2 transition-all" onclick="openServiceDetail(1)">
+              <span>Learn Scope & Deliverables</span>
+              <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+            </button>
+          </div>
+
+          <!-- 3: Withholding Tax -->
+          <div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between gap-space-sm hover:shadow-md transition-all border border-surface-container">
+            <div class="flex items-start gap-space-sm">
+              <div class="w-11 h-11 rounded-lg bg-surface-container-high flex items-center justify-center text-primary flex-shrink-0">
+                <span class="material-symbols-outlined text-[24px]">price_change</span>
+              </div>
+              <div class="flex flex-col flex-1">
+                <h3 class="font-title-md text-title-md font-bold text-on-surface">Withholding Tax (WHT)</h3>
+                <p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Continuous WHT rate monitoring, bi-annual & monthly statements under Sec 165, and CPR challan reconciliations.</p>
+              </div>
+            </div>
+            <button class="self-start text-primary font-label-md text-label-md flex items-center gap-1 hover:gap-2 transition-all" onclick="openServiceDetail(2)">
+              <span>Learn Scope & Deliverables</span>
+              <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+            </button>
+          </div>
+
+          <!-- 4: FBR Services -->
+          <div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between gap-space-sm hover:shadow-md transition-all border border-surface-container">
+            <div class="flex items-start gap-space-sm">
+              <div class="w-11 h-11 rounded-lg bg-primary-fixed flex items-center justify-center text-primary flex-shrink-0">
+                <span class="material-symbols-outlined text-[24px]">verified</span>
+              </div>
+              <div class="flex flex-col flex-1">
+                <h3 class="font-title-md text-title-md font-bold text-on-surface">FBR Services & Notice Defense</h3>
+                <p class="font-body-sm text-body-sm text-on-surface-variant mt-1">National Tax Number (NTN) registration, Iris portal compliance, 100% ATL inclusion, and regulatory responses.</p>
+              </div>
+            </div>
+            <button class="self-start text-primary font-label-md text-label-md flex items-center gap-1 hover:gap-2 transition-all" onclick="openServiceDetail(3)">
+              <span>Learn Scope & Deliverables</span>
+              <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+            </button>
+          </div>
+
+          <!-- 5: SRB Services -->
+          <div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between gap-space-sm hover:shadow-md transition-all border border-surface-container">
+            <div class="flex items-start gap-space-sm">
+              <div class="w-11 h-11 rounded-lg bg-secondary-fixed flex items-center justify-center text-secondary flex-shrink-0">
+                <span class="material-symbols-outlined text-[24px]">location_city</span>
+              </div>
+              <div class="flex flex-col flex-1">
+                <h3 class="font-title-md text-title-md font-bold text-on-surface">SRB & Provincial Services</h3>
+                <p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Sindh Revenue Board and Punjab Revenue Authority service tax returns, cross-provincial input adjustments.</p>
+              </div>
+            </div>
+            <button class="self-start text-primary font-label-md text-label-md flex items-center gap-1 hover:gap-2 transition-all" onclick="openServiceDetail(4)">
+              <span>Learn Scope & Deliverables</span>
+              <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+            </button>
+          </div>
+
+          <!-- 6: Corporate Tax & SECP -->
+          <div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between gap-space-sm hover:shadow-md transition-all border border-surface-container">
+            <div class="flex items-start gap-space-sm">
+              <div class="w-11 h-11 rounded-lg bg-primary-fixed flex items-center justify-center text-primary flex-shrink-0">
+                <span class="material-symbols-outlined text-[24px]">corporate_fare</span>
+              </div>
+              <div class="flex flex-col flex-1">
+                <h3 class="font-title-md text-title-md font-bold text-on-surface">Corporate Tax & SECP</h3>
+                <p class="font-body-sm text-body-sm text-on-surface-variant mt-1">SECP company incorporation, Form A / Form 29 statutory filings, corporate secretarial, statutory audit oversight.</p>
+              </div>
+            </div>
+            <button class="self-start text-primary font-label-md text-label-md flex items-center gap-1 hover:gap-2 transition-all" onclick="openServiceDetail(5)">
+              <span>Learn Scope & Deliverables</span>
+              <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+            </button>
+          </div>
+
+          <!-- 7: Tax Audit & Appeals -->
+          <div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between gap-space-sm hover:shadow-md transition-all border border-surface-container">
+            <div class="flex items-start gap-space-sm">
+              <div class="w-11 h-11 rounded-lg bg-surface-container-high flex items-center justify-center text-primary flex-shrink-0">
+                <span class="material-symbols-outlined text-[24px]">gavel</span>
+              </div>
+              <div class="flex flex-col flex-1">
+                <h3 class="font-title-md text-title-md font-bold text-on-surface">Tax Audit & Assessment</h3>
+                <p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Section 122 amendment proceedings, Section 177 audits, penalty waiver applications, Commissioner Appeals.</p>
+              </div>
+            </div>
+            <button class="self-start text-primary font-label-md text-label-md flex items-center gap-1 hover:gap-2 transition-all" onclick="openServiceDetail(6)">
+              <span>Learn Scope & Deliverables</span>
+              <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+            </button>
+          </div>
+
+          <!-- 8: Business Advisory -->
+          <div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between gap-space-sm hover:shadow-md transition-all border border-surface-container">
+            <div class="flex items-start gap-space-sm">
+              <div class="w-11 h-11 rounded-lg bg-secondary-fixed flex items-center justify-center text-secondary flex-shrink-0">
+                <span class="material-symbols-outlined text-[24px]">trending_up</span>
+              </div>
+              <div class="flex flex-col flex-1">
+                <h3 class="font-title-md text-title-md font-bold text-on-surface">Business Restructuring</h3>
+                <p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Tax-optimized corporate structuring, M&A tax evaluations, startup valuation, cross-border remittance planning.</p>
+              </div>
+            </div>
+            <button class="self-start text-primary font-label-md text-label-md flex items-center gap-1 hover:gap-2 transition-all" onclick="openServiceDetail(7)">
+              <span>Learn Scope & Deliverables</span>
+              <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3. INTERACTIVE TAX ESTIMATION TOOL (PAKISTAN TAX SLABS) -->
+      <section class="px-gutter-mobile py-space-lg flex flex-col gap-space-md bg-surface-container-low" id="calculator-section">
+        <div class="flex flex-col gap-1">
+          <div class="flex items-center gap-1 text-secondary font-label-sm text-label-sm uppercase tracking-wider font-semibold">
+            <span class="material-symbols-outlined text-[16px]">calculate</span>
+            <span>Finance Act 2024-25 Ready</span>
+          </div>
+          <h2 class="font-headline-md text-headline-md font-bold text-on-surface">Tax Estimation Tool</h2>
+          <p class="font-body-md text-body-md text-on-surface-variant">
+            Calculate your statutory liability under Pakistani Income Tax Ordinance slabs and compare with non-filer penalties.
+          </p>
+        </div>
+
+        <!-- Calculator Card -->
+        <div class="rounded-xl bg-surface-container-lowest p-space-md shadow-md flex flex-col gap-space-md border border-surface-container">
+          <!-- Entity Type Selector -->
+          <div class="flex flex-col gap-1.5">
+            <label class="font-label-md text-label-md font-semibold text-on-surface">Entity Classification</label>
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-2" id="calc-entity-group">
+              <button class="calc-entity-btn p-2 rounded-lg bg-primary text-on-primary font-label-sm text-label-sm font-semibold text-center transition-all shadow-sm" onclick="setCalcEntity('salaried', this)" type="button">
+                Salaried Individual
+              </button>
+              <button class="calc-entity-btn p-2 rounded-lg bg-surface-container text-on-surface font-label-sm text-label-sm font-semibold text-center transition-all hover:bg-surface-container-high" onclick="setCalcEntity('business', this)" type="button">
+                Sole Proprietor
+              </button>
+              <button class="calc-entity-btn p-2 rounded-lg bg-surface-container text-on-surface font-label-sm text-label-sm font-semibold text-center transition-all hover:bg-surface-container-high" onclick="setCalcEntity('aop', this)" type="button">
+                AOP / Partnership
+              </button>
+              <button class="calc-entity-btn p-2 rounded-lg bg-surface-container text-on-surface font-label-sm text-label-sm font-semibold text-center transition-all hover:bg-surface-container-high" onclick="setCalcEntity('corporate', this)" type="button">
+                Private Limited (Co.)
+              </button>
+            </div>
+          </div>
+
+          <!-- Tax Year Selector -->
+          <div class="flex items-center justify-between">
+            <span class="font-label-md text-label-md font-medium text-on-surface">Tax Year Schedule</span>
+            <div class="flex rounded-lg bg-surface-container p-1 gap-1">
+              <button class="px-3 py-1 rounded font-label-sm text-label-sm bg-surface-container-lowest font-bold text-primary shadow-sm" id="year-btn-current" onclick="setCalcYear('2024-2025')">TY 2024-25</button>
+              <button class="px-3 py-1 rounded font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface" id="year-btn-prev" onclick="setCalcYear('2023-2024')">TY 2023-24</button>
+            </div>
+          </div>
+
+          <!-- Dual Sync: Slider + Exact Number Input Field -->
+          <div class="flex flex-col gap-2">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
+              <label class="font-label-md text-label-md font-semibold text-on-surface" for="calc-income-input">Annual Gross Income (PKR)</label>
+              <span class="font-title-md text-title-md font-bold text-primary" id="income-display">PKR 2,400,000</span>
+            </div>
+
+            <!-- Numeric Input with PKR Currency Prefix -->
+            <div class="flex items-center rounded-lg bg-surface-container px-3 py-1.5 border border-surface-container-high">
+              <span class="text-on-surface-variant font-semibold text-sm mr-2">PKR</span>
+              <input class="w-full bg-transparent font-title-md text-title-md font-semibold text-on-surface outline-none" id="calc-income-input" oninput="handleIncomeInput(this.value)" placeholder="e.g. 2400000" type="number" value="2400000" min="0" step="50000"/>
+            </div>
+
+            <!-- Slider -->
+            <input class="w-full accent-primary h-2 bg-surface-container-highest rounded-lg cursor-pointer mt-1" id="income-slider" max="25000000" min="600000" oninput="handleIncomeSlider(this.value)" step="100000" type="range" value="2400000"/>
+            <div class="flex justify-between text-on-surface-variant font-label-sm text-label-sm">
+              <span>600K (Tax-Free)</span>
+              <span>12.5M</span>
+              <span>25M+</span>
+            </div>
+          </div>
+
+          <!-- Allowable Deductions/Expenses (Business Only) -->
+          <div class="hidden flex-col gap-1.5" id="expense-group">
+            <label class="font-label-md text-label-md font-semibold text-on-surface" for="calc-expenses">Allowable Annual Expenses / Deductions (PKR)</label>
+            <div class="flex items-center rounded-lg bg-surface-container px-3 py-2 border border-surface-container-high">
+              <span class="font-label-md text-label-md text-on-surface-variant mr-2">PKR</span>
+              <input class="w-full bg-transparent font-title-md text-title-md text-on-surface outline-none font-semibold" id="calc-expenses" oninput="runTaxCalculation()" placeholder="e.g. 400000" type="number" value="400000"/>
+            </div>
+          </div>
+
+          <!-- Real-Time Calculation Output Bento Tile -->
+          <div class="rounded-xl bg-surface-container p-space-md flex flex-col gap-space-sm border border-surface-container-high">
+            <div class="flex items-center justify-between">
+              <span class="font-label-sm text-label-sm uppercase font-bold tracking-wider text-on-surface-variant">Estimated Statutory Liability</span>
+              <span class="text-xs px-2 py-0.5 rounded bg-primary-fixed text-primary font-bold" id="calc-slab-note">PKR 180,000 + 25%</span>
+            </div>
+            
+            <div class="flex items-baseline justify-between">
+              <span class="font-display-hero-mobile text-display-hero-mobile font-bold text-primary" id="tax-liability-result">PKR 230,000</span>
+              <div class="flex flex-col items-end">
+                <span class="font-label-sm text-label-sm text-on-surface-variant">Effective Tax Rate</span>
+                <span class="font-title-md text-title-md font-bold text-secondary" id="effective-rate-result">9.58%</span>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-2 gap-2 pt-2 border-t border-surface-container-highest/60 text-xs text-on-surface">
+              <div class="flex flex-col">
+                <span class="text-on-surface-variant">Monthly Deduction (WHT):</span>
+                <span class="font-bold text-sm text-primary" id="monthly-tax-result">PKR 19,167</span>
+              </div>
+              <div class="flex flex-col">
+                <span class="text-on-surface-variant">Monthly Take-Home:</span>
+                <span class="font-bold text-sm text-secondary" id="monthly-takehome-result">PKR 180,833</span>
+              </div>
+            </div>
+
+            <div class="pt-space-xs flex items-center justify-between text-on-surface font-label-md text-label-md border-t border-surface-container-highest/60">
+              <span>Annual Retained / Net Income:</span>
+              <span class="font-bold text-on-surface text-base" id="net-income-result">PKR 2,170,000</span>
+            </div>
+          </div>
+
+          <!-- Non-Filer Penalty Callout (High Conversion Value) -->
+          <div class="p-3 rounded-lg bg-amber-500/10 border border-amber-500/30 flex items-start gap-2.5">
+            <span class="material-symbols-outlined text-amber-600 dark:text-amber-400 text-[22px] flex-shrink-0">warning</span>
+            <div class="flex flex-col text-xs leading-relaxed">
+              <span class="font-bold text-amber-900 dark:text-amber-200">Non-Filer Exposure Warning:</span>
+              <span class="text-amber-800 dark:text-amber-300">
+                Non-filers in Pakistan pay double withholding on banking transactions, contracts, and property. Being on the Active Taxpayer List (ATL) saves you approximately <strong id="non-filer-savings" class="underline">PKR 244,500</strong> annually in non-adjustable surcharges.
+              </span>
+            </div>
+          </div>
+
+          <p class="font-body-sm text-body-sm text-on-surface-variant italic">
+            Disclaimer: This calculator provides an illustrative estimate based on general provisions of the Income Tax Ordinance and does not constitute formal tax advisory. Actual liability may vary with withholding credits and exemptions.
+          </p>
+
+          <button class="h-11 rounded-lg bg-secondary text-on-secondary font-label-md text-label-md flex items-center justify-center gap-2 hover:opacity-95 shadow-sm active:scale-95 transition-all" onclick="scrollToSection('consultation-wizard')">
+            <span class="material-symbols-outlined text-[18px]">support_agent</span>
+            <span>Talk to a Tax Consultant for Final Filing</span>
+          </button>
+        </div>
+      </section>
+
+      <!-- 4. INDUSTRIES SECTION -->
+      <section class="px-gutter-mobile py-space-lg flex flex-col gap-space-md" id="industries-section">
+        <div class="flex flex-col gap-1">
+          <div class="flex items-center gap-1 text-primary font-label-sm text-label-sm uppercase tracking-wider font-semibold">
+            <span class="material-symbols-outlined text-[16px]">domain</span>
+            <span>Vertical Competence</span>
+          </div>
+          <h2 class="font-headline-md text-headline-md font-bold text-on-surface">Tailored Fiscal Guidance by Industry</h2>
+          <p class="font-body-md text-body-md text-on-surface-variant">
+            Select your domain to review sector-specific tax credits, exemptions, and compliance frameworks.
+          </p>
+        </div>
+
+        <!-- Scrollable Pills Carousel -->
+        <div class="flex gap-2 overflow-x-auto pb-1" id="industry-tabs">
+          <button class="industry-tab px-3 py-2 rounded-full font-label-sm text-label-sm whitespace-nowrap bg-primary text-on-primary font-semibold flex items-center gap-1.5 transition-all shadow-sm" onclick="selectIndustry('it', this)">
+            <span class="material-symbols-outlined text-[16px]">laptop_mac</span>
+            <span>IT & Software</span>
+          </button>
+          <button class="industry-tab px-3 py-2 rounded-full font-label-sm text-label-sm whitespace-nowrap bg-surface-container text-on-surface font-semibold flex items-center gap-1.5 transition-all hover:bg-surface-container-high" onclick="selectIndustry('retail', this)">
+            <span class="material-symbols-outlined text-[16px]">storefront</span>
+            <span>Retail & POS</span>
+          </button>
+          <button class="industry-tab px-3 py-2 rounded-full font-label-sm text-label-sm whitespace-nowrap bg-surface-container text-on-surface font-semibold flex items-center gap-1.5 transition-all hover:bg-surface-container-high" onclick="selectIndustry('construction', this)">
+            <span class="material-symbols-outlined text-[16px]">foundation</span>
+            <span>Construction & Real Estate</span>
+          </button>
+          <button class="industry-tab px-3 py-2 rounded-full font-label-sm text-label-sm whitespace-nowrap bg-surface-container text-on-surface font-semibold flex items-center gap-1.5 transition-all hover:bg-surface-container-high" onclick="selectIndustry('manufacturing', this)">
+            <span class="material-symbols-outlined text-[16px]">precision_manufacturing</span>
+            <span>Manufacturing</span>
+          </button>
+          <button class="industry-tab px-3 py-2 rounded-full font-label-sm text-label-sm whitespace-nowrap bg-surface-container text-on-surface font-semibold flex items-center gap-1.5 transition-all hover:bg-surface-container-high" onclick="selectIndustry('ecommerce', this)">
+            <span class="material-symbols-outlined text-[16px]">shopping_cart</span>
+            <span>E-Commerce</span>
+          </button>
+          <button class="industry-tab px-3 py-2 rounded-full font-label-sm text-label-sm whitespace-nowrap bg-surface-container text-on-surface font-semibold flex items-center gap-1.5 transition-all hover:bg-surface-container-high" onclick="selectIndustry('export', this)">
+            <span class="material-symbols-outlined text-[16px]">sailing</span>
+            <span>Import & Export</span>
+          </button>
+        </div>
+
+        <!-- Dynamic Industry Presentation Card -->
+        <div class="rounded-xl bg-surface-container-lowest p-space-md shadow-md flex flex-col gap-space-sm border border-surface-container" id="industry-content-card">
+          <div class="flex items-center justify-between">
+            <h3 class="font-headline-sm text-headline-sm font-bold text-primary" id="ind-title">IT & Software Exports</h3>
+            <span class="font-label-sm text-label-sm px-2.5 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-semibold" id="ind-badge">0.25% Final Regime</span>
+          </div>
+          <p class="font-body-md text-body-md text-on-surface leading-relaxed" id="ind-summary">
+            Comprehensive legal setup for software exporters, freelance developers, and SaaS entities seeking 100% compliant remittance tax withholding under the PSEB / Section 154A framework.
+          </p>
+          <div class="flex flex-col gap-2 pt-space-xs">
+            <div class="p-space-sm rounded-lg bg-surface-container-low flex items-start gap-2 border border-surface-container/60">
+              <span class="material-symbols-outlined text-secondary text-[20px] flex-shrink-0">check_circle</span>
+              <span class="font-body-sm text-body-sm text-on-surface" id="ind-point-1">PSEB Registration assistance to secure 0.25% concessional withholding tax rate under Section 154A.</span>
+            </div>
+            <div class="p-space-sm rounded-lg bg-surface-container-low flex items-start gap-2 border border-surface-container/60">
+              <span class="material-symbols-outlined text-secondary text-[20px] flex-shrink-0">check_circle</span>
+              <span class="font-body-sm text-body-sm text-on-surface" id="ind-point-2">Exemption handling for provincial sales tax on IT enabled remote support services (SRB / PRA).</span>
+            </div>
+            <div class="p-space-sm rounded-lg bg-surface-container-low flex items-start gap-2 border border-surface-container/60">
+              <span class="material-symbols-outlined text-secondary text-[20px] flex-shrink-0">check_circle</span>
+              <span class="font-body-sm text-body-sm text-on-surface" id="ind-point-3">State Bank of Pakistan (SBP) PRC (Proceed Realization Certificate) filing and Iris declaration.</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 5. CONSULTATION FLOW (5-STEP INTERACTIVE WIZARD) -->
+      <section class="px-gutter-mobile py-space-lg flex flex-col gap-space-md" id="consultation-wizard">
+        <div class="flex flex-col gap-1">
+          <div class="flex items-center gap-1 text-primary font-label-sm text-label-sm uppercase tracking-wider font-semibold">
+            <span class="material-symbols-outlined text-[16px]">calendar_today</span>
+            <span>Advisory Booking</span>
+          </div>
+          <h2 class="font-headline-md text-headline-md font-bold text-on-surface">Book a Consultation</h2>
+          <p class="font-body-md text-body-md text-on-surface-variant">
+            Schedule a dedicated one-on-one session with our senior tax advocates and corporate consultants.
+          </p>
+        </div>
+
+        <!-- Wizard Box -->
+        <div class="rounded-xl bg-surface-container-lowest p-space-md shadow-md flex flex-col gap-space-md border border-surface-container">
+          <!-- 5-Step Progress Header -->
+          <div class="flex flex-col gap-2">
+            <div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm font-semibold">
+              <span id="wizard-step-label">Step 1 of 5: Select Advisory Service</span>
+              <span class="text-primary font-bold" id="wizard-step-percent">20%</span>
+            </div>
+            <div class="w-full bg-surface-container-highest rounded-full h-1.5 overflow-hidden">
+              <div class="bg-primary h-1.5 rounded-full transition-all duration-300" id="wizard-progress-bar" style="width: 20%"></div>
+            </div>
+          </div>
+
+          <!-- Step 1: Select Service -->
+          <div class="wizard-step-content flex flex-col gap-space-sm" id="step-content-1">
+            <span class="font-title-md text-title-md font-bold text-on-surface">What advisory do you require?</span>
+            <div class="flex flex-col gap-2">
+              <label class="flex items-center gap-3 p-3 rounded-lg bg-surface-container-low cursor-pointer hover:bg-surface-container transition-colors border border-surface-container/60">
+                <input checked="" class="accent-primary w-4 h-4" name="wizard-service" type="radio" value="Income Tax & Wealth Statement"/>
+                <div class="flex flex-col">
+                  <span class="font-label-md text-label-md font-semibold text-on-surface">Income Tax & Wealth Statement</span>
+                  <span class="font-body-sm text-body-sm text-on-surface-variant">Annual filing, ATL status, assets reconciliation</span>
+                </div>
+              </label>
+              <label class="flex items-center gap-3 p-3 rounded-lg bg-surface-container-low cursor-pointer hover:bg-surface-container transition-colors border border-surface-container/60">
+                <input class="accent-primary w-4 h-4" name="wizard-service" type="radio" value="Corporate & SECP Advisory"/>
+                <div class="flex flex-col">
+                  <span class="font-label-md text-label-md font-semibold text-on-surface">Corporate & SECP Advisory</span>
+                  <span class="font-body-sm text-body-sm text-on-surface-variant">Pvt Ltd incorporation, statutory audits & forms</span>
+                </div>
+              </label>
+              <label class="flex items-center gap-3 p-3 rounded-lg bg-surface-container-low cursor-pointer hover:bg-surface-container transition-colors border border-surface-container/60">
+                <input class="accent-primary w-4 h-4" name="wizard-service" type="radio" value="FBR / SRB Notice Handling & Audit"/>
+                <div class="flex flex-col">
+                  <span class="font-label-md text-label-md font-semibold text-on-surface">FBR / SRB Notice & Audit Hearing</span>
+                  <span class="font-body-sm text-body-sm text-on-surface-variant">Section 122, 177, Commissioner appeals</span>
+                </div>
+              </label>
+              <label class="flex items-center gap-3 p-3 rounded-lg bg-surface-container-low cursor-pointer hover:bg-surface-container transition-colors border border-surface-container/60">
+                <input class="accent-primary w-4 h-4" name="wizard-service" type="radio" value="Business Structuring & Tax Planning"/>
+                <div class="flex flex-col">
+                  <span class="font-label-md text-label-md font-semibold text-on-surface">Business Structuring & Tax Planning</span>
+                  <span class="font-body-sm text-body-sm text-on-surface-variant">Optimizing group tax liability and sales tax flow</span>
+                </div>
+              </label>
+            </div>
+          </div>
+
+          <!-- Step 2: Select Date (Dynamic Generation) -->
+          <div class="wizard-step-content hidden flex-col gap-space-sm" id="step-content-2">
+            <span class="font-title-md text-title-md font-bold text-on-surface">Select your preferred date</span>
+            <div class="grid grid-cols-3 gap-2" id="wizard-dates-grid">
+              <!-- Dynamically populated by JS renderDynamicWizardDates() -->
+            </div>
+          </div>
+
+          <!-- Step 3: Select Time Slot -->
+          <div class="wizard-step-content hidden flex-col gap-space-sm" id="step-content-3">
+            <span class="font-title-md text-title-md font-bold text-on-surface">Select your preferred session slot</span>
+            <div class="flex flex-col gap-2">
+              <label class="flex items-center justify-between p-3 rounded-lg bg-surface-container-low cursor-pointer hover:bg-surface-container transition-colors border border-surface-container/60">
+                <div class="flex items-center gap-3">
+                  <input checked="" class="accent-primary w-4 h-4" name="wizard-time" type="radio" value="Morning — 10:00 AM"/>
+                  <span class="font-label-md text-label-md font-semibold text-on-surface">Morning Session</span>
+                </div>
+                <span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-primary-fixed text-primary font-bold">10:00 AM</span>
+              </label>
+              <label class="flex items-center justify-between p-3 rounded-lg bg-surface-container-low cursor-pointer hover:bg-surface-container transition-colors border border-surface-container/60">
+                <div class="flex items-center gap-3">
+                  <input class="accent-primary w-4 h-4" name="wizard-time" type="radio" value="Afternoon — 02:30 PM"/>
+                  <span class="font-label-md text-label-md font-semibold text-on-surface">Afternoon Session</span>
+                </div>
+                <span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-primary-fixed text-primary font-bold">02:30 PM</span>
+              </label>
+              <label class="flex items-center justify-between p-3 rounded-lg bg-surface-container-low cursor-pointer hover:bg-surface-container transition-colors border border-surface-container/60">
+                <div class="flex items-center gap-3">
+                  <input class="accent-primary w-4 h-4" name="wizard-time" type="radio" value="Executive Evening — 05:00 PM"/>
+                  <span class="font-label-md text-label-md font-semibold text-on-surface">Executive Evening</span>
+                </div>
+                <span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-primary-fixed text-primary font-bold">05:00 PM</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Step 4: Contact Information -->
+          <div class="wizard-step-content hidden flex-col gap-space-sm" id="step-content-4">
+            <span class="font-title-md text-title-md font-bold text-on-surface">Client & Entity Information</span>
+            <div class="flex flex-col gap-space-xs">
+              <label class="font-label-sm text-label-sm font-semibold text-on-surface-variant">Full Legal Name *</label>
+              <input class="h-10 px-3 rounded-lg bg-surface-container-low font-body-md text-body-md text-on-surface outline-none focus:bg-surface-container border border-surface-container-high" id="wz-name" placeholder="e.g. Asad Siddiqui" type="text" required/>
+            </div>
+            <div class="flex flex-col gap-space-xs">
+              <label class="font-label-sm text-label-sm font-semibold text-on-surface-variant">Entity / Business Name (Optional)</label>
+              <input class="h-10 px-3 rounded-lg bg-surface-container-low font-body-md text-body-md text-on-surface outline-none focus:bg-surface-container border border-surface-container-high" id="wz-company" placeholder="e.g. Nexus Dynamics Pvt Ltd" type="text"/>
+            </div>
+            <div class="flex flex-col gap-space-xs">
+              <label class="font-label-sm text-label-sm font-semibold text-on-surface-variant">WhatsApp / Mobile Number *</label>
+              <input class="h-10 px-3 rounded-lg bg-surface-container-low font-body-md text-body-md text-on-surface outline-none focus:bg-surface-container border border-surface-container-high" id="wz-phone" placeholder="+92 300 1234567" type="tel" required/>
+            </div>
+          </div>
+
+          <!-- Step 5: Summary & Final Confirmation -->
+          <div class="wizard-step-content hidden flex-col gap-space-sm" id="step-content-5">
+            <div class="p-space-sm rounded-lg bg-secondary-container/30 flex items-center gap-2 border border-secondary/20">
+              <span class="material-symbols-outlined text-secondary text-[22px]">verified</span>
+              <span class="font-label-md text-label-md font-semibold text-on-secondary-container">Consultation Slot Ready to Reserve</span>
+            </div>
+            <div class="rounded-lg bg-surface-container-low p-space-sm flex flex-col gap-2 font-body-sm text-body-sm border border-surface-container-high">
+              <div class="flex justify-between">
+                <span class="text-on-surface-variant">Advisory Service:</span>
+                <span class="font-semibold text-on-surface" id="summary-service">Income Tax</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="text-on-surface-variant">Scheduled Date:</span>
+                <span class="font-semibold text-on-surface" id="summary-date">Tomorrow</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="text-on-surface-variant">Session Slot:</span>
+                <span class="font-semibold text-on-surface" id="summary-time">10:00 AM PKT</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="text-on-surface-variant">Client Name:</span>
+                <span class="font-semibold text-on-surface" id="summary-client">Asad Siddiqui</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="text-on-surface-variant">Contact:</span>
+                <span class="font-semibold text-on-surface" id="summary-phone">+92 300 0000000</span>
+              </div>
+            </div>
+            <div class="flex items-center gap-2 text-on-surface-variant font-label-sm text-label-sm">
+              <span class="material-symbols-outlined text-[16px] text-secondary">check</span>
+              <span>Secure video link & checklist will be dispatched via WhatsApp.</span>
+            </div>
+          </div>
+
+          <!-- Success State (Shown after submit) -->
+          <div class="hidden flex-col items-center text-center py-space-md gap-space-sm" id="wizard-success-state">
+            <div class="w-16 h-16 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center shadow-sm">
+              <span class="material-symbols-outlined text-[36px] text-secondary">task_alt</span>
+            </div>
+            <h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">Appointment Confirmed!</h3>
+            <div class="px-3 py-1 rounded-full bg-surface-container text-primary font-mono text-sm font-bold" id="confirmed-booking-id">
+              TXP-89214
+            </div>
+            <p class="font-body-md text-body-md text-on-surface-variant max-w-sm">
+              A certified tax advocate has been scheduled. Your appointment is recorded in the portal backend.
+            </p>
+            <button class="mt-2 px-5 py-2.5 rounded-lg bg-surface-container text-primary font-label-md text-label-md hover:bg-surface-container-high transition-colors" onclick="resetWizard()">
+              Schedule Another Session
+            </button>
+          </div>
+
+          <!-- Wizard Navigation Buttons -->
+          <div class="flex items-center justify-between pt-space-xs" id="wizard-nav-actions">
+            <button class="h-10 px-4 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md disabled:opacity-40 hover:bg-surface-container-high transition-colors" disabled="" id="wizard-prev-btn" onclick="wizardPrev()" type="button">
+              Back
+            </button>
+            <button class="h-10 px-6 rounded-lg bg-primary text-on-primary font-label-md text-label-md flex items-center gap-1 shadow-sm hover:bg-primary-container active:scale-95 transition-all" id="wizard-next-btn" onclick="wizardNext()" type="button">
+              <span>Proceed</span>
+              <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- 6. WHY CHOOSE US -->
+      <section class="px-gutter-mobile py-space-lg flex flex-col gap-space-md bg-surface-container-low">
+        <div class="flex flex-col gap-1">
+          <div class="flex items-center gap-1 text-primary font-label-sm text-label-sm uppercase tracking-wider font-semibold">
+            <span class="material-symbols-outlined text-[16px]">military_tech</span>
+            <span>Institutional Pedigree</span>
+          </div>
+          <h2 class="font-headline-md text-headline-md font-bold text-on-surface">Why Choose Us</h2>
+          <p class="font-body-md text-body-md text-on-surface-variant">
+            Trusted counsel balancing statutory accuracy with actionable commercial velocity.
+          </p>
+        </div>
+
+        <!-- 6 Value Pillars Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm">
+          <div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-2 border border-surface-container">
+            <div class="w-10 h-10 rounded-lg bg-primary-fixed flex items-center justify-center text-primary">
+              <span class="material-symbols-outlined text-[20px]">workspace_premium</span>
+            </div>
+            <h3 class="font-title-md text-title-md font-bold text-on-surface">Tax Expertise</h3>
+            <p class="font-body-sm text-body-sm text-on-surface-variant">Led by seasoned High Court Tax Advocates and Fellow Chartered Accountants specializing in complex FBR litigation.</p>
+          </div>
+          <div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-2 border border-surface-container">
+            <div class="w-10 h-10 rounded-lg bg-secondary-fixed flex items-center justify-center text-secondary">
+              <span class="material-symbols-outlined text-[20px]">insights</span>
+            </div>
+            <h3 class="font-title-md text-title-md font-bold text-on-surface">Business-Focused Advice</h3>
+            <p class="font-body-sm text-body-sm text-on-surface-variant">Fiscal models designed to preserve cash flow, unlock tax credits, and defend working capital from arbitrary assessments.</p>
+          </div>
+          <div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-2 border border-surface-container">
+            <div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-primary">
+              <span class="material-symbols-outlined text-[20px]">security</span>
+            </div>
+            <h3 class="font-title-md text-title-md font-bold text-on-surface">End-to-End Compliance</h3>
+            <p class="font-body-sm text-body-sm text-on-surface-variant">Seamless unified handling across FBR Iris, SECP eServices, SRB, PRA, and provincial withholding monitoring.</p>
+          </div>
+          <div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-2 border border-surface-container">
+            <div class="w-10 h-10 rounded-lg bg-secondary-fixed flex items-center justify-center text-secondary">
+              <span class="material-symbols-outlined text-[20px]">sync_alt</span>
+            </div>
+            <h3 class="font-title-md text-title-md font-bold text-on-surface">Transparent Communication</h3>
+            <p class="font-body-sm text-body-sm text-on-surface-variant">Upfront legal fee structures without surprise billable additions. Real-time updates via WhatsApp and digital portal.</p>
+          </div>
+          <div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-2 border border-surface-container">
+            <div class="w-10 h-10 rounded-lg bg-primary-fixed flex items-center justify-center text-primary">
+              <span class="material-symbols-outlined text-[20px]">tune</span>
+            </div>
+            <h3 class="font-title-md text-title-md font-bold text-on-surface">Customized Solutions</h3>
+            <p class="font-body-sm text-body-sm text-on-surface-variant">Bespoke tax setups tailored to your specific corporate structure, whether a single proprietor or cross-provincial entity.</p>
+          </div>
+          <div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-2 border border-surface-container">
+            <div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-primary">
+              <span class="material-symbols-outlined text-[20px]">support</span>
+            </div>
+            <h3 class="font-title-md text-title-md font-bold text-on-surface">Long-Term Support</h3>
+            <p class="font-body-sm text-body-sm text-on-surface-variant">Year-round active retainer support guarding against sudden statutory amendments, notice timelines, and annual filings.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 7. 4-STEP PROCESS -->
+      <section class="px-gutter-mobile py-space-lg flex flex-col gap-space-md">
+        <div class="flex flex-col gap-1">
+          <div class="flex items-center gap-1 text-secondary font-label-sm text-label-sm uppercase tracking-wider font-semibold">
+            <span class="material-symbols-outlined text-[16px]">route</span>
+            <span>Clear Execution</span>
+          </div>
+          <h2 class="font-headline-md text-headline-md font-bold text-on-surface">Our 4-Step Process</h2>
+          <p class="font-body-md text-body-md text-on-surface-variant">
+            How we transition your company into an unassailable active filer status.
+          </p>
+        </div>
+        <div class="flex flex-col gap-space-sm">
+          <div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex items-start gap-space-sm border border-surface-container">
+            <div class="w-10 h-10 rounded-xl bg-primary text-on-primary font-bold flex items-center justify-center flex-shrink-0 text-title-md">01</div>
+            <div class="flex flex-col">
+              <h3 class="font-title-md text-title-md font-bold text-on-surface">Tell Us Your Requirement</h3>
+              <p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Submit your NTN status, audit notices, or registration goals via our digital portal or swift consultation.</p>
+            </div>
+          </div>
+          <div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex items-start gap-space-sm border border-surface-container">
+            <div class="w-10 h-10 rounded-xl bg-surface-container text-primary font-bold flex items-center justify-center flex-shrink-0 text-title-md">02</div>
+            <div class="flex flex-col">
+              <h3 class="font-title-md text-title-md font-bold text-on-surface">Consultation & Analysis</h3>
+              <p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Our certified consultants cross-examine your ledgers, bank transactions, and withholding slips to identify discrepancies.</p>
+            </div>
+          </div>
+          <div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex items-start gap-space-sm border border-surface-container">
+            <div class="w-10 h-10 rounded-xl bg-surface-container text-primary font-bold flex items-center justify-center flex-shrink-0 text-title-md">03</div>
+            <div class="flex flex-col">
+              <h3 class="font-title-md text-title-md font-bold text-on-surface">Strategy & Documentation</h3>
+              <p class="font-body-sm text-body-sm text-on-surface-variant mt-1">We draft return computations, asset reconciliations, legal replies, or SECP articles aligned with the latest Finance Act.</p>
+            </div>
+          </div>
+          <div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex items-start gap-space-sm border border-surface-container">
+            <div class="w-10 h-10 rounded-xl bg-secondary text-on-secondary font-bold flex items-center justify-center flex-shrink-0 text-title-md">04</div>
+            <div class="flex flex-col">
+              <h3 class="font-title-md text-title-md font-bold text-on-surface">Filing & Compliance Support</h3>
+              <p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Instant submission on Iris/eServices portals, delivery of CPR / Acknowledgement slips, and continuous ATL maintenance.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 8. RESOURCES & KNOWLEDGE BASE -->
+      <section class="px-gutter-mobile py-space-lg flex flex-col gap-space-md bg-surface-container-low" id="resources-section">
+        <div class="flex flex-col gap-1">
+          <div class="flex items-center gap-1 text-primary font-label-sm text-label-sm uppercase tracking-wider font-semibold">
+            <span class="material-symbols-outlined text-[16px]">library_books</span>
+            <span>Statutory Intel</span>
+          </div>
+          <h2 class="font-headline-md text-headline-md font-bold text-on-surface">Modern Resources & Knowledge Base</h2>
+          <p class="font-body-md text-body-md text-on-surface-variant">
+            Latest insights on FBR statutory regulatory orders (SROs), budget amendments, and filing schedules.
+          </p>
+        </div>
+
+        <!-- Search Box -->
+        <div class="flex items-center rounded-xl bg-surface-container-lowest px-3 py-2 shadow-sm border border-surface-container">
+          <span class="material-symbols-outlined text-[20px] text-on-surface-variant mr-2">search</span>
+          <input class="w-full bg-transparent font-body-md text-body-md text-on-surface outline-none" id="resource-search" oninput="filterResources()" placeholder="Search SROs, section 7E, ATL rules, tax slabs..." type="text"/>
+        </div>
+
+        <!-- Filter Chips -->
+        <div class="flex gap-2 overflow-x-auto pb-1" id="resource-filters">
+          <button class="res-filter-btn px-3 py-1.5 rounded-full font-label-sm text-label-sm whitespace-nowrap bg-primary text-on-primary font-semibold shadow-sm" onclick="filterResourceCategory('All', this)">All</button>
+          <button class="res-filter-btn px-3 py-1.5 rounded-full font-label-sm text-label-sm whitespace-nowrap bg-surface-container text-on-surface font-semibold hover:bg-surface-container-high transition-colors" onclick="filterResourceCategory('Tax Updates', this)">Tax Updates</button>
+          <button class="res-filter-btn px-3 py-1.5 rounded-full font-label-sm text-label-sm whitespace-nowrap bg-surface-container text-on-surface font-semibold hover:bg-surface-container-high transition-colors" onclick="filterResourceCategory('FBR', this)">FBR Updates</button>
+          <button class="res-filter-btn px-3 py-1.5 rounded-full font-label-sm text-label-sm whitespace-nowrap bg-surface-container text-on-surface font-semibold hover:bg-surface-container-high transition-colors" onclick="filterResourceCategory('SRB', this)">SRB Updates</button>
+          <button class="res-filter-btn px-3 py-1.5 rounded-full font-label-sm text-label-sm whitespace-nowrap bg-surface-container text-on-surface font-semibold hover:bg-surface-container-high transition-colors" onclick="filterResourceCategory('Guides', this)">Compliance Guides</button>
+        </div>
+
+        <!-- Article Cards List -->
+        <div class="flex flex-col gap-space-sm" id="resource-cards-list">
+          <!-- Article 1 -->
+          <article class="resource-card p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-2 border border-surface-container cursor-pointer hover:shadow-md transition-shadow" data-cat="Tax Updates" onclick="openGuideModal('slab2025')">
+            <div class="flex items-center justify-between">
+              <span class="px-2 py-0.5 rounded bg-primary-fixed text-primary font-label-sm text-label-sm font-bold">Tax Updates</span>
+              <span class="text-on-surface-variant font-label-sm text-label-sm">4 min read</span>
+            </div>
+            <h3 class="font-title-md text-title-md font-bold text-on-surface">Finance Act 2024-25: Revised Salaried & Non-Salaried Tax Slabs</h3>
+            <p class="font-body-sm text-body-sm text-on-surface-variant">A concise breakdown of the revised progressive income tax brackets, surcharge additions for high earners, and withholding exemptions.</p>
+            <div class="flex items-center gap-1 text-primary font-label-sm text-label-sm font-semibold pt-1">
+              <span>Read Comprehensive Guide</span>
+              <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+            </div>
+          </article>
+
+          <!-- Article 2 -->
+          <article class="resource-card p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-2 border border-surface-container cursor-pointer hover:shadow-md transition-shadow" data-cat="FBR" onclick="openGuideModal('sec7e')">
+            <div class="flex items-center justify-between">
+              <span class="px-2 py-0.5 rounded bg-secondary-fixed text-secondary font-label-sm text-label-sm font-bold">FBR</span>
+              <span class="text-on-surface-variant font-label-sm text-label-sm">6 min read</span>
+            </div>
+            <h3 class="font-title-md text-title-md font-bold text-on-surface">Demystifying Section 7E: Deemed Rental Income on Immovable Property</h3>
+            <p class="font-body-sm text-body-sm text-on-surface-variant">Judicial standing, Lahore and Sindh High Court updates, form 7E filling requirements, and property transaction clearance procedures.</p>
+            <div class="flex items-center gap-1 text-primary font-label-sm text-label-sm font-semibold pt-1">
+              <span>Read Comprehensive Guide</span>
+              <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+            </div>
+          </article>
+
+          <!-- Article 3 -->
+          <article class="resource-card p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-2 border border-surface-container cursor-pointer hover:shadow-md transition-shadow" data-cat="SRB" onclick="openGuideModal('srbIT')">
+            <div class="flex items-center justify-between">
+              <span class="px-2 py-0.5 rounded bg-surface-container-high text-primary font-label-sm text-label-sm font-bold">SRB</span>
+              <span class="text-on-surface-variant font-label-sm text-label-sm">3 min read</span>
+            </div>
+            <h3 class="font-title-md text-title-md font-bold text-on-surface">SRB Withholding Rules for IT and Call Centers</h3>
+            <p class="font-body-sm text-body-sm text-on-surface-variant">Sindh Sales Tax on Services rules 2024: ensuring valid withholding certificates to evade statutory show-cause notices.</p>
+            <div class="flex items-center gap-1 text-primary font-label-sm text-label-sm font-semibold pt-1">
+              <span>Read Comprehensive Guide</span>
+              <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+            </div>
+          </article>
+
+          <!-- Article 4 -->
+          <article class="resource-card p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-2 border border-surface-container cursor-pointer hover:shadow-md transition-shadow" data-cat="Guides" onclick="openGuideModal('atlActivation')">
+            <div class="flex items-center justify-between">
+              <span class="px-2 py-0.5 rounded bg-secondary-fixed text-secondary font-label-sm text-label-sm font-bold">Guides</span>
+              <span class="text-on-surface-variant font-label-sm text-label-sm">5 min read</span>
+            </div>
+            <h3 class="font-title-md text-title-md font-bold text-on-surface">Step-by-Step Guide: FBR ATL Status Activation & 100% Tax Relief</h3>
+            <p class="font-body-sm text-body-sm text-on-surface-variant">How to instantly regain active taxpayer status, surcharge fee guidelines via PSID, and eliminating double withholding on banking transactions.</p>
+            <div class="flex items-center gap-1 text-primary font-label-sm text-label-sm font-semibold pt-1">
+              <span>Read Comprehensive Guide</span>
+              <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- 9. FAQ ACCORDION -->
+      <section class="px-gutter-mobile py-space-lg flex flex-col gap-space-md">
+        <div class="flex flex-col gap-1">
+          <div class="flex items-center gap-1 text-secondary font-label-sm text-label-sm uppercase tracking-wider font-semibold">
+            <span class="material-symbols-outlined text-[16px]">help</span>
+            <span>Clear Clarifications</span>
+          </div>
+          <h2 class="font-headline-md text-headline-md font-bold text-on-surface">Frequently Asked Questions</h2>
+          <p class="font-body-md text-body-md text-on-surface-variant">
+            Essential answers for corporate leaders, investors, and taxpayers in Pakistan.
+          </p>
+        </div>
+
+        <div class="flex flex-col gap-2" id="faq-accordion">
+          <div class="faq-item rounded-xl bg-surface-container-lowest shadow-sm overflow-hidden border border-surface-container">
+            <button class="w-full p-space-md flex items-center justify-between text-left gap-2" onclick="toggleFaq(this)">
+              <span class="font-title-md text-title-md font-bold text-on-surface">What is the statutory deadline for filing Income Tax Returns in Pakistan?</span>
+              <span class="material-symbols-outlined faq-icon text-on-surface-variant transition-transform">expand_more</span>
+            </button>
+            <div class="faq-content hidden px-space-md pb-space-md font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              For individuals and salaried persons, the statutory deadline is generally September 30th of each tax year. For corporate entities with a special tax year or December closing, the deadline is typically December 31st. FBR may issue official extension circulars periodically.
+            </div>
+          </div>
+
+          <div class="faq-item rounded-xl bg-surface-container-lowest shadow-sm overflow-hidden border border-surface-container">
+            <button class="w-full p-space-md flex items-center justify-between text-left gap-2" onclick="toggleFaq(this)">
+              <span class="font-title-md text-title-md font-bold text-on-surface">How do I obtain a National Tax Number (NTN) & get on the ATL?</span>
+              <span class="material-symbols-outlined faq-icon text-on-surface-variant transition-transform">expand_more</span>
+            </button>
+            <div class="faq-content hidden px-space-md pb-space-md font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Individuals can obtain an NTN using their CNIC, registered mobile SIM, and electricity bill through the FBR Iris portal. ATL (Active Taxpayer List) status is immediately unlocked upon submission of the relevant annual tax return and payment of the applicable ATL surcharge challan.
+            </div>
+          </div>
+
+          <div class="faq-item rounded-xl bg-surface-container-lowest shadow-sm overflow-hidden border border-surface-container">
+            <button class="w-full p-space-md flex items-center justify-between text-left gap-2" onclick="toggleFaq(this)">
+              <span class="font-title-md text-title-md font-bold text-on-surface">What is the distinction between Sales Tax and Income Tax?</span>
+              <span class="material-symbols-outlined faq-icon text-on-surface-variant transition-transform">expand_more</span>
+            </button>
+            <div class="faq-content hidden px-space-md pb-space-md font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Income Tax is a direct tax levied on your annual net profit or salary under the Federal Income Tax Ordinance 2001. Sales Tax is an indirect consumption tax levied on goods (under FBR at standard 18%) or services (under provincial authorities like SRB/PRA at 13-16%) on monthly transactions.
+            </div>
+          </div>
+
+          <div class="faq-item rounded-xl bg-surface-container-lowest shadow-sm overflow-hidden border border-surface-container">
+            <button class="w-full p-space-md flex items-center justify-between text-left gap-2" onclick="toggleFaq(this)">
+              <span class="font-title-md text-title-md font-bold text-on-surface">How does TaxPro handle statutory FBR or SRB audit notices?</span>
+              <span class="material-symbols-outlined faq-icon text-on-surface-variant transition-transform">expand_more</span>
+            </button>
+            <div class="faq-content hidden px-space-md pb-space-md font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              We thoroughly evaluate the legal basis of the notice (Sections 122, 177, or 214C), prepare formal documentary reconciliations, draft legal rejoinders referencing case law, and physically represent you before assessing officers to prevent unmerited ex-parte orders.
+            </div>
+          </div>
+
+          <div class="faq-item rounded-xl bg-surface-container-lowest shadow-sm overflow-hidden border border-surface-container">
+            <button class="w-full p-space-md flex items-center justify-between text-left gap-2" onclick="toggleFaq(this)">
+              <span class="font-title-md text-title-md font-bold text-on-surface">What annual SECP compliance is required for a Private Limited Company?</span>
+              <span class="material-symbols-outlined faq-icon text-on-surface-variant transition-transform">expand_more</span>
+            </button>
+            <div class="faq-content hidden px-space-md pb-space-md font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Every SECP-registered company must conduct an Annual General Meeting (AGM), submit Form A / Form B (annual returns), Form 29 (particulars of directors and officers), and maintain an updated register of Ultimate Beneficial Owners (UBO) under Anti-Money Laundering frameworks.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 10. CONSULTATION & ADVISORY -->
+      <section class="px-gutter-mobile py-space-lg flex flex-col gap-space-md bg-surface-container-low" id="contact-section">
+        <div class="flex flex-col gap-1">
+          <div class="flex items-center gap-1 text-primary font-label-sm text-label-sm uppercase tracking-wider font-semibold">
+            <span class="material-symbols-outlined text-[16px]">verified_user</span>
+            <span>Direct Client Advisory</span>
+          </div>
+          <h2 class="font-headline-md text-headline-md font-bold text-on-surface">Consultation & Advisory</h2>
+          <p class="font-body-md text-body-md text-on-surface-variant">
+            Get professional tax consultation through a secure online session or a private face-to-face meeting by appointment.
+          </p>
+        </div>
+
+        <!-- Two Consultation Option Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-space-sm">
+          <!-- Option 1: ONLINE CONSULTATION -->
+          <div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between gap-space-md border border-surface-container hover:shadow-md transition-shadow">
+            <div class="flex flex-col gap-space-sm">
+              <div class="flex items-center justify-between">
+                <div class="w-12 h-12 rounded-xl bg-primary-fixed flex items-center justify-center text-primary shadow-sm">
+                  <span class="material-symbols-outlined text-[26px]">videocam</span>
+                </div>
+                <span class="font-label-sm text-label-sm px-2.5 py-1 rounded-full bg-primary-fixed text-primary font-bold">Encrypted Session</span>
+              </div>
+              <div class="flex flex-col gap-1">
+                <h3 class="font-title-md text-title-md font-bold text-on-surface text-lg">Online Consultation</h3>
+                <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                  Book a secure one-on-one virtual consultation with our senior tax consultant from anywhere in Pakistan or overseas. Ideal for annual return filing, Iris portal assessment, wealth statements, and urgent notice review.
+                </p>
+              </div>
+
+              <!-- Deliverable Highlights -->
+              <div class="flex flex-col gap-2 pt-1 font-body-sm text-body-sm text-on-surface">
+                <div class="flex items-start gap-2">
+                  <span class="material-symbols-outlined text-secondary text-[18px] flex-shrink-0 mt-0.5">check_circle</span>
+                  <span>1-on-1 private video conference (Google Meet / Zoom)</span>
+                </div>
+                <div class="flex items-start gap-2">
+                  <span class="material-symbols-outlined text-secondary text-[18px] flex-shrink-0 mt-0.5">check_circle</span>
+                  <span>Direct screen-sharing for Iris ledger & CPR verification</span>
+                </div>
+                <div class="flex items-start gap-2">
+                  <span class="material-symbols-outlined text-secondary text-[18px] flex-shrink-0 mt-0.5">check_circle</span>
+                  <span>Advance payment required prior to appointment confirmation</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex flex-col gap-space-xs pt-space-xs border-t border-surface-container">
+              <div class="flex items-baseline justify-between">
+                <span class="text-xs text-on-surface-variant font-medium">Standard Advisory Fee:</span>
+                <span class="font-bold text-primary text-base">PKR 5,000 <span class="text-xs font-normal text-on-surface-variant">/ session</span></span>
+              </div>
+              <button class="w-full h-11 rounded-lg bg-primary text-on-primary font-label-md text-label-md flex items-center justify-center gap-2 shadow-sm hover:bg-primary-container active:scale-95 transition-all" onclick="startConsultationFlow('online')">
+                <span class="material-symbols-outlined text-[18px]">videocam</span>
+                <span>Book Online Consultation</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Option 2: PRIVATE FACE-TO-FACE CONSULTATION -->
+          <div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between gap-space-md border border-surface-container hover:shadow-md transition-shadow">
+            <div class="flex flex-col gap-space-sm">
+              <div class="flex items-center justify-between">
+                <div class="w-12 h-12 rounded-xl bg-secondary-fixed flex items-center justify-center text-secondary shadow-sm">
+                  <span class="material-symbols-outlined text-[26px]">shield_person</span>
+                </div>
+                <span class="font-label-sm text-label-sm px-2.5 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-bold">By Prior Appointment</span>
+              </div>
+              <div class="flex flex-col gap-1">
+                <h3 class="font-title-md text-title-md font-bold text-on-surface text-lg">Private Face-to-Face Consultation</h3>
+                <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                  In-depth, confidential meeting conducted at a private location rather than a publicly listed office. Designed for complex corporate restructuring, high-stakes FBR/SRB show-cause notices, appellate proceedings, and high-net-worth estate planning.
+                </p>
+              </div>
+
+              <!-- Deliverable Highlights -->
+              <div class="flex flex-col gap-2 pt-1 font-body-sm text-body-sm text-on-surface">
+                <div class="flex items-start gap-2">
+                  <span class="material-symbols-outlined text-secondary text-[18px] flex-shrink-0 mt-0.5">check_circle</span>
+                  <span>Conducted at a discreet, private venue by confirmed appointment</span>
+                </div>
+                <div class="flex items-start gap-2">
+                  <span class="material-symbols-outlined text-secondary text-[18px] flex-shrink-0 mt-0.5">check_circle</span>
+                  <span>Comprehensive scrutiny of original financial records & tax books</span>
+                </div>
+                <div class="flex items-start gap-2">
+                  <span class="material-symbols-outlined text-secondary text-[18px] flex-shrink-0 mt-0.5">check_circle</span>
+                  <span>Strict confidentiality protocol & advance payment required</span>
+                </div>
+              </div>
+
+              <!-- Mandatory Privacy Note Banner -->
+              <div class="p-3 rounded-lg bg-surface-container flex items-center gap-2 border border-surface-container-high text-xs text-on-surface-variant">
+                <span class="material-symbols-outlined text-secondary text-[18px] flex-shrink-0">shield</span>
+                <span class="font-medium">Private meeting details are shared only with confirmed clients.</span>
+              </div>
+            </div>
+
+            <div class="flex flex-col gap-space-xs pt-space-xs border-t border-surface-container">
+              <div class="flex items-baseline justify-between">
+                <span class="text-xs text-on-surface-variant font-medium">Executive Advisory Fee:</span>
+                <span class="font-bold text-secondary text-base">PKR 7,000 <span class="text-xs font-normal text-on-surface-variant">/ session</span></span>
+              </div>
+              <button class="w-full h-11 rounded-lg bg-secondary text-on-secondary font-label-md text-label-md flex items-center justify-center gap-2 shadow-sm hover:opacity-95 active:scale-95 transition-all" onclick="startConsultationFlow('face_to_face')">
+                <span class="material-symbols-outlined text-[18px]">calendar_month</span>
+                <span>Request Face-to-Face Consultation</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- INTERACTIVE CONSULTATION & ADVANCE PAYMENT FLOW MODULE -->
+        <div class="rounded-xl bg-surface-container-lowest p-space-md shadow-md flex flex-col gap-space-md border border-surface-container" id="adv-consultation-flow-card">
+          <!-- Header and Mode Switcher -->
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between pb-space-xs border-b border-surface-container gap-2">
+            <div class="flex items-center gap-2">
+              <div class="w-8 h-8 rounded-lg bg-primary-container text-on-primary flex items-center justify-center font-bold">
+                <span class="material-symbols-outlined text-[18px]">verified</span>
+              </div>
+              <div>
+                <h3 class="font-title-md text-title-md font-bold text-on-surface">Consultation Booking & Advance Payment</h3>
+                <span class="text-xs text-on-surface-variant">5-Step Verification & Payment Schedule</span>
+              </div>
+            </div>
+            <div class="flex items-center bg-surface-container p-1 rounded-lg gap-1" id="adv-mode-selector">
+              <button type="button" id="adv-mode-online" onclick="setAdvConsultationMode('online')" class="flex-1 py-1.5 px-3 rounded-md bg-primary text-on-primary font-semibold text-xs text-center shadow-sm transition-all flex items-center justify-center gap-1">
+                <span class="material-symbols-outlined text-[16px]">videocam</span>
+                <span>Online (PKR 5,000)</span>
+              </button>
+              <button type="button" id="adv-mode-f2f" onclick="setAdvConsultationMode('face_to_face')" class="flex-1 py-1.5 px-3 rounded-md bg-surface-container text-on-surface font-semibold text-xs text-center transition-all hover:bg-surface-container-high flex items-center justify-center gap-1">
+                <span class="material-symbols-outlined text-[16px]">lock_person</span>
+                <span>Private In-Person (PKR 7,000)</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- 5-Step Progress Bar -->
+          <div class="flex flex-col gap-2">
+            <div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm font-semibold">
+              <span id="adv-wizard-step-label">Step 1 of 5: Consultation Request & Matter</span>
+              <span class="text-primary font-bold" id="adv-wizard-step-percent">20%</span>
+            </div>
+            <div class="w-full bg-surface-container-highest rounded-full h-1.5 overflow-hidden">
+              <div class="bg-primary h-1.5 rounded-full transition-all duration-300" id="adv-wizard-progress-bar" style="width: 20%"></div>
+            </div>
+          </div>
+
+          <!-- STEP 1: CONSULTATION REQUEST -->
+          <div class="flex flex-col gap-space-sm" id="adv-step-content-1">
+            <div class="flex items-center justify-between">
+              <span class="font-title-md text-title-md font-bold text-on-surface">Specify Consultation Topic & Scope</span>
+              <span class="font-bold text-primary text-sm" id="adv-price-display">PKR 5,000</span>
+            </div>
+
+            <!-- Privacy Note for Face-to-Face -->
+            <div class="hidden p-3 rounded-lg bg-secondary-container/20 border border-secondary/30 flex items-center gap-2 text-xs text-on-surface" id="adv-f2f-privacy-note">
+              <span class="material-symbols-outlined text-secondary text-[18px] flex-shrink-0">lock</span>
+              <span><strong>Discreet Meeting Protocol:</strong> Meetings are conducted at a private location rather than a publicly listed office. Private meeting details are shared only with confirmed clients following advance payment.</span>
+            </div>
+
+            <div class="flex flex-col gap-1">
+              <label class="font-label-sm text-label-sm font-semibold text-on-surface-variant">Consultation Type *</label>
+              <select class="h-10 px-3 rounded-lg bg-surface-container-low font-body-md text-body-md text-on-surface outline-none border border-surface-container-high" id="adv-consultation-type">
+                <option value="Annual Income Tax Return & Wealth Statement">Annual Income Tax Return & Wealth Statement</option>
+                <option value="FBR / SRB Notice Defense & Tax Audit">FBR / SRB Notice Defense & Tax Audit Hearing</option>
+                <option value="Corporate Tax & SECP Company Advisory">Corporate Tax & SECP Secretarial Advisory</option>
+                <option value="IT Exporter & Cross-Border Remittance (0.25%)">IT Exporter & Cross-Border Remittance (0.25% Regime)</option>
+                <option value="Sales Tax & Provincial PRA/SRB Practice">Sales Tax (FBR) & Provincial PRA/SRB Practice</option>
+                <option value="Strategic Business Restructuring & M&A">Strategic Business Restructuring & M&A</option>
+                <option value="General Strategic Tax Advisory">General Strategic Tax & Commercial Advisory</option>
+              </select>
+            </div>
+
+            <div class="flex flex-col gap-1">
+              <label class="font-label-sm text-label-sm font-semibold text-on-surface-variant">Brief Description of the Matter *</label>
+              <textarea class="p-3 rounded-lg bg-surface-container-low font-body-md text-body-md text-on-surface outline-none focus:bg-surface-container border border-surface-container-high" id="adv-matter-desc" placeholder="Briefly describe your statutory notice, tax dispute, entity structure, or filing objectives..." rows="3"></textarea>
+            </div>
+          </div>
+
+          <!-- STEP 2: SELECT DATE & TIME -->
+          <div class="hidden flex-col gap-space-sm" id="adv-step-content-2">
+            <span class="font-title-md text-title-md font-bold text-on-surface">Select Preferred Session Schedule</span>
+            
+            <div class="flex flex-col gap-2">
+              <label class="font-label-sm text-label-sm font-semibold text-on-surface-variant">Available Dates (Upcoming Business Days)</label>
+              <div class="grid grid-cols-3 gap-2" id="adv-dates-grid">
+                <!-- Dynamically populated by renderAdvDates() -->
+              </div>
+            </div>
+
+            <div class="flex flex-col gap-2 pt-2">
+              <label class="font-label-sm text-label-sm font-semibold text-on-surface-variant">Preferred Time Slot</label>
+              <div class="flex flex-col gap-2">
+                <label class="flex items-center justify-between p-3 rounded-lg bg-surface-container-low cursor-pointer hover:bg-surface-container transition-colors border border-surface-container/60">
+                  <div class="flex items-center gap-3">
+                    <input checked="" class="accent-primary w-4 h-4" name="adv-session-time" type="radio" value="Morning — 10:00 AM to 11:00 AM"/>
+                    <span class="font-label-md text-label-md font-semibold text-on-surface">Morning Session</span>
+                  </div>
+                  <span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-primary-fixed text-primary font-bold">10:00 AM PKT</span>
+                </label>
+                <label class="flex items-center justify-between p-3 rounded-lg bg-surface-container-low cursor-pointer hover:bg-surface-container transition-colors border border-surface-container/60">
+                  <div class="flex items-center gap-3">
+                    <input class="accent-primary w-4 h-4" name="adv-session-time" type="radio" value="Afternoon — 02:30 PM to 03:30 PM"/>
+                    <span class="font-label-md text-label-md font-semibold text-on-surface">Afternoon Session</span>
+                  </div>
+                  <span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-primary-fixed text-primary font-bold">02:30 PM PKT</span>
+                </label>
+                <label class="flex items-center justify-between p-3 rounded-lg bg-surface-container-low cursor-pointer hover:bg-surface-container transition-colors border border-surface-container/60">
+                  <div class="flex items-center gap-3">
+                    <input class="accent-primary w-4 h-4" name="adv-session-time" type="radio" value="Executive Evening — 05:00 PM to 06:00 PM"/>
+                    <span class="font-label-md text-label-md font-semibold text-on-surface">Executive Evening</span>
+                  </div>
+                  <span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-primary-fixed text-primary font-bold">05:00 PM PKT</span>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <!-- STEP 3: CLIENT & CONTACT DETAILS -->
+          <div class="hidden flex-col gap-space-sm" id="adv-step-content-3">
+            <span class="font-title-md text-title-md font-bold text-on-surface">Client & Entity Credentials</span>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm">
+              <div class="flex flex-col gap-1">
+                <label class="font-label-sm text-label-sm font-semibold text-on-surface-variant">Full Legal Name *</label>
+                <input class="h-10 px-3 rounded-lg bg-surface-container-low font-body-md text-body-md text-on-surface outline-none focus:bg-surface-container border border-surface-container-high" id="adv-client-name" placeholder="e.g. Asad Siddiqui" type="text" required/>
+              </div>
+              <div class="flex flex-col gap-1">
+                <label class="font-label-sm text-label-sm font-semibold text-on-surface-variant">WhatsApp / Mobile (+92) *</label>
+                <input class="h-10 px-3 rounded-lg bg-surface-container-low font-body-md text-body-md text-on-surface outline-none focus:bg-surface-container border border-surface-container-high" id="adv-client-phone" placeholder="0300 1234567" type="tel" required/>
+              </div>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm">
+              <div class="flex flex-col gap-1">
+                <label class="font-label-sm text-label-sm font-semibold text-on-surface-variant">Email Address *</label>
+                <input class="h-10 px-3 rounded-lg bg-surface-container-low font-body-md text-body-md text-on-surface outline-none focus:bg-surface-container border border-surface-container-high" id="adv-client-email" placeholder="asad@business.pk" type="email" required/>
+              </div>
+              <div class="flex flex-col gap-1">
+                <label class="font-label-sm text-label-sm font-semibold text-on-surface-variant">Entity / Business Name (Optional)</label>
+                <input class="h-10 px-3 rounded-lg bg-surface-container-low font-body-md text-body-md text-on-surface outline-none focus:bg-surface-container border border-surface-container-high" id="adv-client-company" placeholder="e.g. Nexus Dynamics Pvt Ltd" type="text"/>
+              </div>
+            </div>
+            <div class="p-3 rounded-lg bg-surface-container-low border border-surface-container text-xs text-on-surface-variant flex items-center gap-2">
+              <span class="material-symbols-outlined text-primary text-[18px]">verified_user</span>
+              <span>All consultation details are protected by strict advocate-client professional privilege.</span>
+            </div>
+          </div>
+
+          <!-- STEP 4: ADVANCE PAYMENT VERIFICATION -->
+          <div class="hidden flex-col gap-space-sm" id="adv-step-content-4">
+            <div class="flex items-center justify-between">
+              <span class="font-title-md text-title-md font-bold text-on-surface">Advance Payment Required</span>
+              <span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-amber-500/10 text-amber-800 dark:text-amber-200 font-semibold border border-amber-500/30">Pending Payment</span>
+            </div>
+
+            <!-- Consultation Summary Box -->
+            <div class="rounded-lg bg-surface-container-low p-space-sm flex flex-col gap-2 font-body-sm text-body-sm border border-surface-container">
+              <div class="flex justify-between">
+                <span class="text-on-surface-variant">Consultation Mode:</span>
+                <span class="font-semibold text-on-surface" id="adv-invoice-mode">Online Encrypted Consultation</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="text-on-surface-variant">Session Schedule:</span>
+                <span class="font-semibold text-on-surface" id="adv-invoice-schedule">Tomorrow | Morning 10:00 AM</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="text-on-surface-variant">Client Name:</span>
+                <span class="font-semibold text-on-surface" id="adv-invoice-client">Client</span>
+              </div>
+              <div class="flex justify-between pt-1 border-t border-surface-container text-base">
+                <span class="font-bold text-on-surface">Advance Payable Amount:</span>
+                <span class="font-bold text-primary" id="adv-invoice-fee">PKR 5,000</span>
+              </div>
+            </div>
+
+            <!-- Payment Method Tabs -->
+            <div class="flex flex-col gap-2">
+              <label class="font-label-sm text-label-sm font-semibold text-on-surface-variant">Select Advance Payment Method</label>
+              <div class="grid grid-cols-3 gap-2">
+                <button type="button" id="pay-tab-raast" onclick="setAdvPaymentMethod('raast_ibft')" class="py-2 px-3 rounded-lg bg-primary text-on-primary font-semibold text-xs text-center shadow-sm transition-all flex items-center justify-center gap-1">
+                  <span>Raast / IBFT</span>
+                </button>
+                <button type="button" id="pay-tab-card" onclick="setAdvPaymentMethod('card')" class="py-2 px-3 rounded-lg bg-surface-container text-on-surface font-semibold text-xs text-center transition-all hover:bg-surface-container-high flex items-center justify-center gap-1">
+                  <span>Debit / Card</span>
+                </button>
+                <button type="button" id="pay-tab-wallet" onclick="setAdvPaymentMethod('wallet')" class="py-2 px-3 rounded-lg bg-surface-container text-on-surface font-semibold text-xs text-center transition-all hover:bg-surface-container-high flex items-center justify-center gap-1">
+                  <span>JazzCash / Wallet</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Method Content: Raast / IBFT -->
+            <div class="p-space-sm rounded-lg bg-surface-container flex flex-col gap-2 text-xs" id="pay-content-raast">
+              <div class="flex justify-between items-center font-mono">
+                <span class="text-on-surface-variant font-sans">Bank:</span>
+                <span class="font-bold text-on-surface">Meezan Bank Limited</span>
+              </div>
+              <div class="flex justify-between items-center font-mono">
+                <span class="text-on-surface-variant font-sans">Account Title:</span>
+                <span class="font-bold text-on-surface">TaxPro Advisory Services</span>
+              </div>
+              <div class="flex justify-between items-center font-mono">
+                <span class="text-on-surface-variant font-sans">IBAN:</span>
+                <span class="font-bold text-primary select-all">PK36MEZN0001000892019281</span>
+              </div>
+              <div class="flex justify-between items-center font-mono">
+                <span class="text-on-surface-variant font-sans">Raast ID:</span>
+                <span class="font-bold text-secondary select-all">03001234567</span>
+              </div>
+              <div class="flex flex-col gap-1 pt-1 border-t border-surface-container-high">
+                <label class="font-semibold text-on-surface-variant font-sans">Sender Name / Bank Transaction Reference (TID):</label>
+                <input class="h-9 px-3 rounded-md bg-surface-container-lowest text-on-surface outline-none border border-surface-container-high font-mono" id="adv-raast-ref" placeholder="e.g. FT24267X001928 or Sender Account" type="text"/>
+              </div>
+            </div>
+
+            <!-- Method Content: Card -->
+            <div class="hidden p-space-sm rounded-lg bg-surface-container flex flex-col gap-2 text-xs" id="pay-content-card">
+              <div class="flex flex-col gap-1">
+                <label class="font-semibold text-on-surface-variant">Cardholder Name</label>
+                <input class="h-9 px-3 rounded-md bg-surface-container-lowest text-on-surface outline-none border border-surface-container-high" placeholder="Asad Siddiqui" type="text"/>
+              </div>
+              <div class="flex flex-col gap-1">
+                <label class="font-semibold text-on-surface-variant">Card Number (Visa / MasterCard / PayPak)</label>
+                <input class="h-9 px-3 rounded-md bg-surface-container-lowest text-on-surface outline-none border border-surface-container-high font-mono" placeholder="4214 •••• •••• 9812" type="text"/>
+              </div>
+              <div class="grid grid-cols-2 gap-2">
+                <input class="h-9 px-3 rounded-md bg-surface-container-lowest text-on-surface outline-none border border-surface-container-high" placeholder="MM / YY" type="text"/>
+                <input class="h-9 px-3 rounded-md bg-surface-container-lowest text-on-surface outline-none border border-surface-container-high" placeholder="CVV" type="password"/>
+              </div>
+            </div>
+
+            <!-- Method Content: Wallet -->
+            <div class="hidden p-space-sm rounded-lg bg-surface-container flex flex-col gap-2 text-xs" id="pay-content-wallet">
+              <div class="flex flex-col gap-1">
+                <label class="font-semibold text-on-surface-variant">JazzCash / Easypaisa Mobile Account Number</label>
+                <input class="h-9 px-3 rounded-md bg-surface-container-lowest text-on-surface outline-none border border-surface-container-high" placeholder="0300 1234567" type="tel"/>
+              </div>
+              <span class="text-on-surface-variant">An authorization prompt will be dispatched to your mobile wallet.</span>
+            </div>
+
+            <div class="p-2.5 rounded-lg bg-surface-container flex items-center gap-2 border border-surface-container-high text-xs text-on-surface-variant">
+              <span class="material-symbols-outlined text-secondary text-[16px] flex-shrink-0">lock</span>
+              <span>256-bit encrypted checkout. Appointment is verified & confirmed immediately upon advance payment.</span>
+            </div>
+
+            <button type="button" id="adv-submit-payment-btn" onclick="submitAdvancePayment()" class="w-full h-12 rounded-lg bg-primary text-on-primary font-label-md text-label-md flex items-center justify-center gap-2 shadow-md hover:bg-primary-container active:scale-95 transition-all">
+              <span class="material-symbols-outlined text-[20px]">lock</span>
+              <span>Confirm & Pay <span id="adv-pay-button-amount">PKR 5,000</span></span>
+            </button>
+          </div>
+
+          <!-- STEP 5: CONFIRMATION (ONLY SHOWN AFTER PAYMENT) -->
+          <div class="hidden flex-col items-center text-center py-space-sm gap-space-sm" id="adv-step-content-5">
+            <div class="w-16 h-16 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center shadow-md animate-bounce">
+              <span class="material-symbols-outlined text-[36px] text-secondary">verified</span>
+            </div>
+            <div class="flex flex-col gap-1">
+              <h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">Appointment Confirmed & Paid!</h3>
+              <p class="text-xs text-on-surface-variant">Advance payment successfully processed. Session reserved with our principal tax advocate.</p>
+            </div>
+
+            <div class="px-3.5 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-mono text-sm font-bold flex items-center gap-1.5 shadow-sm">
+              <span class="material-symbols-outlined text-[16px]">bookmark</span>
+              <span id="adv-confirmed-ref-id">TXP-ADV-89104</span>
+            </div>
+
+            <!-- Receipt Breakdown -->
+            <div class="w-full rounded-xl bg-surface-container-low p-space-sm flex flex-col gap-2 font-body-sm text-body-sm text-left border border-surface-container">
+              <div class="flex justify-between items-center">
+                <span class="text-on-surface-variant">Consultation Mode:</span>
+                <span class="font-semibold text-primary" id="adv-confirmed-mode-badge">Online Encrypted Session</span>
+              </div>
+              <div class="flex justify-between items-center">
+                <span class="text-on-surface-variant">Scheduled Slot:</span>
+                <span class="font-semibold text-on-surface" id="adv-confirmed-schedule">Tomorrow | 10:00 AM PKT</span>
+              </div>
+              <div class="flex justify-between items-center">
+                <span class="text-on-surface-variant">Client Reference:</span>
+                <span class="font-semibold text-on-surface" id="adv-confirmed-client">Client</span>
+              </div>
+              <div class="flex justify-between items-center pt-1 border-t border-surface-container">
+                <span class="text-on-surface-variant">Payment Status:</span>
+                <span class="font-bold text-secondary text-xs" id="adv-confirmed-paid-amount">Advance Paid</span>
+              </div>
+            </div>
+
+            <!-- Mandatory Privacy / Link Directive -->
+            <div class="w-full" id="adv-confirmed-privacy-directive">
+              <!-- Dynamically populated based on mode -->
+            </div>
+
+            <div class="flex gap-2 w-full pt-1">
+              <button type="button" onclick="resetAdvWizard()" class="flex-1 h-10 rounded-lg bg-surface-container text-primary font-label-md text-label-md hover:bg-surface-container-high transition-colors">
+                Book Another Consultation
+              </button>
+              <button type="button" onclick="scrollToSection('hero')" class="flex-1 h-10 rounded-lg bg-primary text-on-primary font-label-md text-label-md hover:bg-primary-container transition-colors">
+                Back to Portal
+              </button>
+            </div>
+          </div>
+
+          <!-- Wizard Prev / Next Actions for Steps 1-3 -->
+          <div class="flex items-center justify-between pt-space-xs border-t border-surface-container" id="adv-wizard-nav-actions">
+            <button class="h-10 px-4 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md disabled:opacity-40 hover:bg-surface-container-high transition-colors" disabled="" id="adv-wizard-prev-btn" onclick="advWizardPrev()" type="button">
+              Back
+            </button>
+            <button class="h-10 px-6 rounded-lg bg-primary text-on-primary font-label-md text-label-md flex items-center gap-1 shadow-sm hover:bg-primary-container active:scale-95 transition-all" id="adv-wizard-next-btn" onclick="advWizardNext()" type="button">
+              <span>Proceed to Date & Slot</span>
+              <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Direct WhatsApp Pre-Consultation Channel (Zero Physical Address) -->
+        <a class="p-space-sm rounded-xl bg-secondary text-on-secondary font-label-md text-label-md flex items-center justify-between shadow-sm hover:opacity-95 transition-opacity active:scale-[0.99]" href="https://wa.me/923001234567?text=Hello%20TaxPro,%20I%20would%20like%20to%20inquire%20about%20booking%20a%20tax%20consultation" rel="noopener noreferrer" target="_blank">
+          <div class="flex items-center gap-2">
+            <span class="material-symbols-outlined text-[24px]">chat</span>
+            <div class="flex flex-col">
+              <span class="font-bold">Instant Pre-Booking Inquiry via WhatsApp</span>
+              <span class="text-xs opacity-90">Direct advocate response • Mon-Sat 9:00 AM - 7:00 PM PKT</span>
+            </div>
+          </div>
+          <span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+        </a>
+
+        <!-- Pre-Consultation Question / Official Inquiry Form -->
+        <div class="rounded-xl bg-surface-container-lowest p-space-md shadow-md flex flex-col gap-space-sm border border-surface-container">
+          <h3 class="font-title-md text-title-md font-bold text-on-surface">Submit a Pre-Consultation Question</h3>
+          <p class="font-body-sm text-body-sm text-on-surface-variant">Have a preliminary question before scheduling your formal consultation? Submit an inquiry to our advisory team.</p>
+
+          <!-- Success Feedback Banner -->
+          <div class="hidden p-space-sm rounded-lg bg-secondary-container/40 text-on-secondary-container items-center gap-2 border border-secondary/30" id="contact-success-banner">
+            <span class="material-symbols-outlined text-secondary text-[24px]">check_circle</span>
+            <div class="flex flex-col font-body-sm text-body-sm">
+              <span class="font-bold">Inquiry Transmitted Successfully (<span id="contact-ref-id">INQ-00000</span>)</span>
+              <span>A managing tax consultant will contact you via WhatsApp/Email within 2 business hours.</span>
+            </div>
+          </div>
+
+          <form class="flex flex-col gap-space-sm" id="contact-form" onsubmit="handleContactSubmit(event)">
+            <div class="flex flex-col gap-1">
+              <label class="font-label-sm text-label-sm font-semibold text-on-surface-variant">Full Legal Name *</label>
+              <input class="h-10 px-3 rounded-lg bg-surface-container-low font-body-md text-body-md text-on-surface outline-none focus:bg-surface-container border border-surface-container-high" id="contact-name" placeholder="Muhammad Ali" required="" type="text"/>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm">
+              <div class="flex flex-col gap-1">
+                <label class="font-label-sm text-label-sm font-semibold text-on-surface-variant">Corporate Email *</label>
+                <input class="h-10 px-3 rounded-lg bg-surface-container-low font-body-md text-body-md text-on-surface outline-none focus:bg-surface-container border border-surface-container-high" id="contact-email" placeholder="ali@business.pk" required="" type="email"/>
+              </div>
+              <div class="flex flex-col gap-1">
+                <label class="font-label-sm text-label-sm font-semibold text-on-surface-variant">Mobile / WhatsApp (+92) *</label>
+                <input class="h-10 px-3 rounded-lg bg-surface-container-low font-body-md text-body-md text-on-surface outline-none focus:bg-surface-container border border-surface-container-high" id="contact-phone" placeholder="0300 1234567" required="" type="tel"/>
+              </div>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm">
+              <div class="flex flex-col gap-1">
+                <label class="font-label-sm text-label-sm font-semibold text-on-surface-variant">Business Entity Type</label>
+                <select class="h-10 px-3 rounded-lg bg-surface-container-low font-body-md text-body-md text-on-surface outline-none border border-surface-container-high" id="contact-biz-type">
+                  <option value="Private Limited">Private Limited (Pvt Ltd)</option>
+                  <option value="Sole Proprietor">Sole Proprietorship</option>
+                  <option value="AOP">AOP / Partnership</option>
+                  <option value="Salaried Individual">Salaried Individual</option>
+                  <option value="Freelancer / Exporter">Freelancer / IT Exporter</option>
+                </select>
+              </div>
+              <div class="flex flex-col gap-1">
+                <label class="font-label-sm text-label-sm font-semibold text-on-surface-variant">Primary Need</label>
+                <select class="h-10 px-3 rounded-lg bg-surface-container-low font-body-md text-body-md text-on-surface outline-none border border-surface-container-high" id="contact-service">
+                  <option value="Annual Income Tax Return">Annual Income Tax Return</option>
+                  <option value="FBR Show Cause Notice">FBR Show Cause Notice</option>
+                  <option value="Sales Tax & PRA/SRB Filing">Sales Tax & PRA/SRB Filing</option>
+                  <option value="SECP Company Registration">SECP Company Registration</option>
+                  <option value="General Tax Consultation">General Tax Advisory</option>
+                </select>
+              </div>
+            </div>
+            <div class="flex flex-col gap-1">
+              <label class="font-label-sm text-label-sm font-semibold text-on-surface-variant">Specific Requirements / Case Overview</label>
+              <textarea class="p-3 rounded-lg bg-surface-container-low font-body-md text-body-md text-on-surface outline-none focus:bg-surface-container border border-surface-container-high" id="contact-message" placeholder="Provide NTN or describe statutory notice reference if applicable..." rows="3"></textarea>
+            </div>
+            <button class="h-11 rounded-lg bg-primary text-on-primary font-label-md text-label-md flex items-center justify-center gap-2 shadow-sm hover:bg-primary-container active:scale-95 transition-all" id="contact-submit-btn" type="submit">
+              <span class="material-symbols-outlined text-[18px]">send</span>
+              <span>Submit Question</span>
+            </button>
+          </form>
+        </div>
+      </section>
+
+      <!-- 11. COMPREHENSIVE FOOTER -->
+      <footer class="px-gutter-mobile py-space-xl flex flex-col gap-space-lg bg-surface-container border-t border-surface-container-high">
+        <div class="flex flex-col gap-space-xs">
+          <div class="flex items-center gap-2">
+            <span class="material-symbols-outlined text-primary text-[28px]">account_balance</span>
+            <span class="font-headline-sm text-headline-sm font-bold text-primary">TaxPro Consultants</span>
+          </div>
+          <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Pakistan's premier institutional tax advisory, statutory compliance, and corporate litigation consultancy firm. Registered advocates of High Court and authorized e-intermediaries.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-2 gap-space-md">
+          <div class="flex flex-col gap-2">
+            <span class="font-label-sm text-label-sm font-bold uppercase tracking-wider text-on-surface">Core Practice</span>
+            <button onclick="scrollToSection('services-section')" class="text-left font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors">Income Tax Advisory</button>
+            <button onclick="scrollToSection('services-section')" class="text-left font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors">Sales Tax (FBR/SRB)</button>
+            <button onclick="scrollToSection('services-section')" class="text-left font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors">SECP Incorporation</button>
+            <button onclick="scrollToSection('services-section')" class="text-left font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors">Tax Audit Defense</button>
+          </div>
+          <div class="flex flex-col gap-2">
+            <span class="font-label-sm text-label-sm font-bold uppercase tracking-wider text-on-surface">Tools & Portals</span>
+            <button onclick="scrollToSection('calculator-section')" class="text-left font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors">Tax Calculator 2025</button>
+            <button onclick="scrollToSection('resources-section')" class="text-left font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors">Budget Slabs TY 2025</button>
+            <button onclick="scrollToSection('consultation-wizard')" class="text-left font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors">Schedule Consultation</button>
+            <button onclick="scrollToSection('contact-section')" class="text-left font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors">Consultation & Advisory</button>
+          </div>
+        </div>
+
+        <div class="p-space-sm rounded-lg bg-surface-container-high/60 flex flex-col gap-1 border border-surface-container-high">
+          <span class="font-label-sm text-label-sm font-bold text-on-surface">Regulatory Notice</span>
+          <p class="font-body-sm text-body-sm text-on-surface-variant text-[11px] leading-relaxed">
+            TaxPro Consultants operates in accordance with the Legal Practitioners and Bar Councils Act, the Chartered Accountants Ordinance, and relevant fiscal frameworks of Pakistan. Information contained on this website is for general orientation and does not constitute formal legal counsel.
+          </p>
+        </div>
+
+        <div class="flex flex-col sm:flex-row items-center justify-between gap-2 pt-space-xs text-on-surface-variant font-label-sm text-label-sm border-t border-surface-container-high/50">
+          <span>© 2024-2026 TaxPro Consultants Pakistan. All Rights Reserved.</span>
+          <div class="flex items-center gap-3">
+            <span class="material-symbols-outlined text-[18px] text-secondary">verified</span>
+            <span class="font-semibold text-secondary">Active FBR E-Intermediary</span>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </main>
+
+  <!-- ==================== FIXED MOBILE BOTTOM APP BAR ==================== -->
+  <nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface-container-lowest/90 backdrop-blur-xl border-t border-surface-container shadow-[0_-2px_8px_rgba(0,0,0,0.04)] md:hidden">
+    <div class="flex items-center justify-around h-16 px-space-xs max-w-lg mx-auto">
+      <button onclick="scrollToSection('hero')" class="flex flex-col items-center justify-center min-w-[54px] min-h-[44px] gap-0.5 transition-colors text-primary font-semibold">
+        <span class="material-symbols-outlined text-[22px]">home</span>
+        <span class="font-label-sm text-label-sm">Home</span>
+      </button>
+
+      <button onclick="scrollToSection('services-section')" class="flex flex-col items-center justify-center min-w-[54px] min-h-[44px] gap-0.5 text-on-surface-variant hover:text-on-surface transition-colors">
+        <span class="material-symbols-outlined text-[22px]">assignment</span>
+        <span class="font-label-sm text-label-sm">Services</span>
+      </button>
+
+      <button onclick="scrollToSection('consultation-wizard')" class="flex flex-col items-center justify-center min-w-[54px] min-h-[44px] gap-0.5 -mt-4 group">
+        <div class="w-12 h-12 rounded-full bg-primary-container text-on-primary flex items-center justify-center shadow-lg group-hover:scale-105 group-active:scale-95 transition-all">
+          <span class="material-symbols-outlined text-[22px]">calendar_today</span>
+        </div>
+        <span class="font-label-sm text-label-sm text-primary font-bold mt-0.5">Consult</span>
+      </button>
+
+      <button onclick="scrollToSection('calculator-section')" class="flex flex-col items-center justify-center min-w-[54px] min-h-[44px] gap-0.5 text-on-surface-variant hover:text-on-surface transition-colors">
+        <span class="material-symbols-outlined text-[22px]">calculate</span>
+        <span class="font-label-sm text-label-sm">Tax Tools</span>
+      </button>
+
+      <button onclick="scrollToSection('contact-section')" class="flex flex-col items-center justify-center min-w-[54px] min-h-[44px] gap-0.5 text-on-surface-variant hover:text-on-surface transition-colors">
+        <span class="material-symbols-outlined text-[22px]">headset_mic</span>
+        <span class="font-label-sm text-label-sm">Contact</span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ==================== SERVICE DETAIL BOTTOM SHEET / MODAL ==================== -->
+  <div class="fixed inset-0 z-[70] bg-inverse-surface/50 backdrop-blur-sm hidden items-end sm:items-center justify-center p-0 sm:p-4" id="service-modal">
+    <div class="w-full max-w-lg bg-surface-container-lowest rounded-t-2xl sm:rounded-2xl p-space-md max-h-[85vh] overflow-y-auto flex flex-col gap-space-md shadow-2xl border border-surface-container">
+      <div class="flex items-center justify-between pb-2 border-b border-surface-container">
+        <div class="flex items-center gap-2">
+          <div class="w-9 h-9 rounded-lg bg-primary-fixed flex items-center justify-center text-primary" id="modal-icon-container">
+            <span class="material-symbols-outlined text-[22px]" id="modal-icon">account_balance</span>
+          </div>
+          <h3 class="font-headline-sm text-headline-sm font-bold text-on-surface" id="modal-title">Service Title</h3>
+        </div>
+        <button class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-on-surface hover:bg-surface-container-high transition-colors" onclick="closeServiceModal()">
+          <span class="material-symbols-outlined text-[20px]">close</span>
+        </button>
+      </div>
+
+      <div class="flex flex-col gap-space-sm">
+        <div>
+          <span class="font-label-sm text-label-sm font-bold uppercase tracking-wider text-on-surface-variant">Statutory Mandate</span>
+          <p class="font-body-md text-body-md text-on-surface mt-1 leading-relaxed" id="modal-desc"></p>
+        </div>
+
+        <div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col gap-2 border border-surface-container">
+          <span class="font-label-sm text-label-sm font-bold text-primary uppercase">Scope of Work & Deliverables</span>
+          <ul class="flex flex-col gap-1.5 font-body-sm text-body-sm text-on-surface" id="modal-bullets">
+            <!-- Injected by JS -->
+          </ul>
+        </div>
+
+        <div class="p-space-sm rounded-lg bg-secondary-container/30 flex items-center gap-2 border border-secondary/20">
+          <span class="material-symbols-outlined text-secondary text-[20px]">schedule</span>
+          <span class="font-label-md text-label-md text-on-secondary-container font-semibold" id="modal-turnaround">Standard Turnaround: 2-3 Working Days</span>
+        </div>
+      </div>
+
+      <div class="flex gap-space-xs pt-space-xs border-t border-surface-container">
+        <button class="flex-1 h-11 rounded-lg bg-primary text-on-primary font-label-md text-label-md flex items-center justify-center gap-1 shadow-sm hover:bg-primary-container active:scale-95 transition-all" onclick="requestThisService()">
+          <span class="material-symbols-outlined text-[18px]">add_task</span>
+          <span>Book This Service</span>
+        </button>
+        <button class="px-5 h-11 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md hover:bg-surface-container-high transition-colors" onclick="closeServiceModal()">
+          Close
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== RESOURCE GUIDE MODAL ==================== -->
+  <div class="fixed inset-0 z-[70] bg-inverse-surface/50 backdrop-blur-sm hidden items-end sm:items-center justify-center p-0 sm:p-4" id="guide-modal">
+    <div class="w-full max-w-lg bg-surface-container-lowest rounded-t-2xl sm:rounded-2xl p-space-md max-h-[85vh] overflow-y-auto flex flex-col gap-space-md shadow-2xl border border-surface-container">
+      <div class="flex items-center justify-between pb-2 border-b border-surface-container">
+        <div class="flex items-center gap-2">
+          <span class="px-2 py-0.5 rounded bg-primary-fixed text-primary font-label-sm text-label-sm font-bold" id="guide-modal-badge">Tax Updates</span>
+          <span class="text-xs text-on-surface-variant" id="guide-modal-time">4 min read</span>
+        </div>
+        <button class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-on-surface hover:bg-surface-container-high transition-colors" onclick="closeGuideModal()">
+          <span class="material-symbols-outlined text-[20px]">close</span>
+        </button>
+      </div>
+
+      <div class="flex flex-col gap-space-sm">
+        <h3 class="font-headline-sm text-headline-sm font-bold text-on-surface" id="guide-modal-title">Guide Title</h3>
+        <div class="font-body-md text-body-md text-on-surface leading-relaxed text-sm" id="guide-modal-content">
+          <!-- Guide content injected by JS -->
+        </div>
+      </div>
+
+      <div class="flex gap-space-xs pt-space-xs border-t border-surface-container">
+        <button class="flex-1 h-11 rounded-lg bg-secondary text-on-secondary font-label-md text-label-md flex items-center justify-center gap-1 shadow-sm hover:opacity-95 transition-all" onclick="closeGuideModal(); scrollToSection('consultation-wizard');">
+          <span class="material-symbols-outlined text-[18px]">calendar_month</span>
+          <span>Consult on this Topic</span>
+        </button>
+        <button class="px-5 h-11 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md hover:bg-surface-container-high transition-colors" onclick="closeGuideModal()">
+          Close
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Application Logic Scripts -->
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,170 @@
+/* TaxPro Consultant Portal - Custom Stylesheet */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+  --color-primary: #0037b0;
+  --color-primary-container: #1d4ed8;
+  --color-secondary: #006c4a;
+  --color-secondary-container: #82f5c1;
+  --color-surface: #faf8ff;
+  --color-surface-container: #eaedff;
+  --color-surface-lowest: #ffffff;
+  --color-on-surface: #131b2e;
+  --color-on-surface-variant: #434655;
+  --color-outline: #c4c5d7;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background-color: var(--color-surface);
+  color: var(--color-on-surface);
+  transition: background-color 0.25s ease, color 0.25s ease;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Safe areas */
+.pb-safe {
+  padding-bottom: max(env(safe-area-inset-bottom, 0px), 12px);
+}
+.pt-safe {
+  padding-top: max(env(safe-area-inset-top, 0px), 8px);
+}
+
+/* Dark Mode Overrides */
+html.dark {
+  --color-primary: #3b82f6;
+  --color-primary-container: #2563eb;
+  --color-secondary: #10b981;
+  --color-secondary-container: #064e3b;
+  --color-surface: #0a0f1d;
+  --color-surface-container: #131b2e;
+  --color-surface-lowest: #162038;
+  --color-on-surface: #f1f5f9;
+  --color-on-surface-variant: #94a3b8;
+  --color-outline: #334155;
+}
+
+html.dark body {
+  background-color: #0a0f1d;
+  color: #f1f5f9;
+}
+
+html.dark .bg-surface {
+  background-color: #0a0f1d !important;
+}
+html.dark .bg-surface-container-lowest {
+  background-color: #151e36 !important;
+  border-color: #24304f !important;
+}
+html.dark .bg-surface-container-low {
+  background-color: #12192c !important;
+}
+html.dark .bg-surface-container {
+  background-color: #1a2542 !important;
+}
+html.dark .bg-surface-container-high {
+  background-color: #223055 !important;
+}
+html.dark .bg-surface-container-highest {
+  background-color: #2a3b68 !important;
+}
+html.dark .text-on-surface {
+  color: #f1f5f9 !important;
+}
+html.dark .text-on-surface-variant {
+  color: #94a3b8 !important;
+}
+html.dark .border-outline-variant {
+  border-color: #24304f !important;
+}
+
+/* Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(100, 116, 139, 0.2);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(100, 116, 139, 0.4);
+}
+
+/* Custom Range Slider */
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: #0037b0;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 55, 176, 0.4);
+  border: 2px solid #ffffff;
+  transition: transform 0.15s ease;
+}
+input[type="range"]::-webkit-slider-thumb:hover {
+  transform: scale(1.15);
+}
+html.dark input[type="range"]::-webkit-slider-thumb {
+  background: #3b82f6;
+  border-color: #1e293b;
+  box-shadow: 0 2px 8px rgba(59, 130, 246, 0.5);
+}
+
+/* Modal and Drawer Transitions */
+#mobile-drawer {
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+#service-modal, #guide-modal {
+  transition: opacity 0.2s ease, visibility 0.2s ease;
+}
+
+/* Toast Notifications */
+#toast-container {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  pointer-events: none;
+}
+.toast {
+  pointer-events: auto;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 18px;
+  background: #ffffff;
+  color: #131b2e;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+  font-size: 0.875rem;
+  font-weight: 500;
+  border-left: 4px solid #006c4a;
+  animation: slideInRight 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+html.dark .toast {
+  background: #1e293b;
+  color: #f1f5f9;
+}
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

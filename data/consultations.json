@@ -1,0 +1,22 @@
+﻿{
+    "id":  "TXP-ADV-82351",
+    "time":  "Morning - 10:00 AM to 11:00 AM",
+    "privacyNotice":  "Private meeting details are shared only with confirmed clients.",
+    "consultationType":  "FBR / SRB Notice Defense \u0026 Tax Audit",
+    "company":  "Mahmood Enterprises",
+    "name":  "Tariq Mahmood",
+    "description":  "Received Section 122 show cause notice",
+    "status":  "Paid \u0026 Confirmed",
+    "createdAt":  "2026-09-23T11:40:44Z",
+    "mode":  "face_to_face",
+    "payment":  {
+                    "amount":  12000,
+                    "method":  "raast_ibft",
+                    "paidAt":  "2026-09-23T11:40:44Z",
+                    "transactionRef":  "RAAST-89104812",
+                    "status":  "Paid"
+                },
+    "date":  "Tomorrow (Wed, 24)",
+    "phone":  "+923009988776",
+    "email":  "tariq@bizpk.com"
+}

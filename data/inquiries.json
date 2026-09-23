@@ -1,0 +1,27 @@
+﻿[
+    {
+        "value":  [
+                      {
+                          "id":  "INQ-47120",
+                          "name":  "Muhammad Ali",
+                          "email":  "ali@enterprise.pk",
+                          "phone":  "0300 1234567",
+                          "bizType":  "Private Limited",
+                          "service":  "Annual Income Tax Return",
+                          "message":  "Need corporate filing assistance for TY 2024 with multiple bank accounts.",
+                          "createdAt":  "2026-09-23T09:15:00Z"
+                      }
+                  ],
+        "Count":  1
+    },
+    {
+        "service":  "General Tax Consultation",
+        "id":  "INQ-80527",
+        "name":  "Ahmad Khan",
+        "bizType":  "Sole Proprietor",
+        "phone":  "03009998877",
+        "createdAt":  "2026-09-23T11:15:27Z",
+        "message":  "Need NTN setup",
+        "email":  "ahmad@test.pk"
+    }
+]
