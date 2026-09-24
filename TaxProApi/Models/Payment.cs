@@ -53,6 +53,9 @@ public class Payment
     public DateTime? VerifiedAt { get; set; }
     public int? VerifiedByAdminId { get; set; }
 
+    public DateTime? RejectedAt { get; set; }
+    public int? RejectedByAdminId { get; set; }
+
     public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
     public DateTime? UpdatedAt { get; set; }
 

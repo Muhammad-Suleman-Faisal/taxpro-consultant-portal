@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Suleman\\Desktop\\TaxPro Consultant Portal\\TaxProApi\\TaxProApi.csproj": {}
+    "C:\\Users\\Suleman\\Desktop\\TaxPro Consultant Portal\\taxpro-consultant-portal\\TaxProApi\\TaxProApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Suleman\\Desktop\\TaxPro Consultant Portal\\TaxProApi\\TaxProApi.csproj": {
+    "C:\\Users\\Suleman\\Desktop\\TaxPro Consultant Portal\\taxpro-consultant-portal\\TaxProApi\\TaxProApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Suleman\\Desktop\\TaxPro Consultant Portal\\TaxProApi\\TaxProApi.csproj",
+        "projectUniqueName": "C:\\Users\\Suleman\\Desktop\\TaxPro Consultant Portal\\taxpro-consultant-portal\\TaxProApi\\TaxProApi.csproj",
         "projectName": "TaxProApi",
-        "projectPath": "C:\\Users\\Suleman\\Desktop\\TaxPro Consultant Portal\\TaxProApi\\TaxProApi.csproj",
+        "projectPath": "C:\\Users\\Suleman\\Desktop\\TaxPro Consultant Portal\\taxpro-consultant-portal\\TaxProApi\\TaxProApi.csproj",
         "packagesPath": "C:\\Users\\Suleman\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Suleman\\Desktop\\TaxPro Consultant Portal\\TaxProApi\\obj\\",
+        "outputPath": "C:\\Users\\Suleman\\Desktop\\TaxPro Consultant Portal\\taxpro-consultant-portal\\TaxProApi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Suleman\\AppData\\Roaming\\NuGet\\NuGet.Config"

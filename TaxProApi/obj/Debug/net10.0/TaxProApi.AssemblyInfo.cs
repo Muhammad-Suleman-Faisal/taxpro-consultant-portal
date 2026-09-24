@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TaxProApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c91cc179c4f21fd602c9dc8e257fd66b3103df31")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ac41f09e95169bdb51d58916fd96fbbee6a7a3eb")]
 [assembly: System.Reflection.AssemblyProductAttribute("TaxProApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TaxProApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

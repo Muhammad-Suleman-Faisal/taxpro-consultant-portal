@@ -10,13 +10,11 @@ public enum ConsultationMode
 
 public enum ConsultationStatus
 {
-    PendingPayment,
-    PaymentSubmitted,
-    PaymentVerified,
-    PaymentRejected,
-    Confirmed,
-    Completed,
-    Cancelled
+    PendingPayment,      // Initial state, awaiting payment submission
+    PaymentSubmitted,    // Payment proof submitted, awaiting admin verification
+    Confirmed,           // Payment verified by admin, appointment confirmed
+    Cancelled,           // Cancelled by client/admin OR payment rejected
+    Completed            // Consultation has occurred
 }
 
 public class Consultation
@@ -63,9 +61,13 @@ public class Consultation
     [MaxLength(500)]
     public string? AdminNotes { get; set; }
 
+    [MaxLength(500)]
+    public string? CancellationReason { get; set; }
+
     public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
     public DateTime? UpdatedAt { get; set; }
     public DateTime? ConfirmedAt { get; set; }
+    public DateTime? CancelledAt { get; set; }
 
     // Navigation
     public Payment? Payment { get; set; }

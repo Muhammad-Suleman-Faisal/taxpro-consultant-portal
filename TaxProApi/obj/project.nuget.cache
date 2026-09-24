@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "8Z9IJOBlw7M=",
+  "dgSpecHash": "Yk5nT3yVMqc=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Suleman\\Desktop\\TaxPro Consultant Portal\\TaxProApi\\TaxProApi.csproj",
+  "projectFilePath": "C:\\Users\\Suleman\\Desktop\\TaxPro Consultant Portal\\taxpro-consultant-portal\\TaxProApi\\TaxProApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Suleman\\.nuget\\packages\\bcrypt.net-next\\4.2.0\\bcrypt.net-next.4.2.0.nupkg.sha512",
     "C:\\Users\\Suleman\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",

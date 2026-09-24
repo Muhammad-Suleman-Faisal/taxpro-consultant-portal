@@ -193,34 +193,92 @@ public class ConsultationsController : ControllerBase
         if (consultation == null) return NotFound(new { message = "Consultation not found." });
         if (consultation.Payment == null) return BadRequest(new { message = "No payment record found." });
 
+        // Prevent upload for terminal states
+        if (consultation.Status == ConsultationStatus.Cancelled)
+            return BadRequest(new { message = "Cannot upload proof for cancelled consultation." });
+        
+        if (consultation.Status == ConsultationStatus.Completed)
+            return BadRequest(new { message = "Cannot upload proof for completed consultation." });
+
         if (file == null || file.Length == 0)
             return BadRequest(new { message = "No file provided." });
 
-        // Validate file type (images only for proof)
+        // SECURITY: Validate file type (images and PDF only for proof)
         var allowedTypes = new[] { "image/jpeg", "image/png", "image/jpg", "application/pdf" };
         if (!allowedTypes.Contains(file.ContentType.ToLower()))
             return BadRequest(new { message = "Only JPG, PNG, or PDF files are allowed as payment proof." });
 
-        if (file.Length > 5 * 1024 * 1024) // 5MB limit
+        // SECURITY: Enforce file size limit (5MB max)
+        if (file.Length > 5 * 1024 * 1024)
             return BadRequest(new { message = "File size must not exceed 5MB." });
 
-        var uploadsDir = Path.Combine(_env.WebRootPath, "uploads", "proofs");
+        // SECURITY: Store in non-public uploads directory (not wwwroot for direct access)
+        var uploadsDir = Path.Combine(_env.ContentRootPath, "private_uploads", "proofs");
         Directory.CreateDirectory(uploadsDir);
 
         var ext = Path.GetExtension(file.FileName).ToLower();
+        
+        // SECURITY: Generate safe filename (no user-controlled path components)
         var safeFileName = $"proof_{consultation.Payment.PaymentReference}_{DateTime.UtcNow:yyyyMMddHHmmss}{ext}";
         var filePath = Path.Combine(uploadsDir, safeFileName);
 
         using (var stream = new FileStream(filePath, FileMode.Create))
             await file.CopyToAsync(stream);
 
-        consultation.Payment.ProofFilePath = $"/uploads/proofs/{safeFileName}";
+        // Store relative path from ContentRoot (not publicly accessible)
+        consultation.Payment.ProofFilePath = Path.Combine("private_uploads", "proofs", safeFileName);
         consultation.Payment.ProofFileName = file.FileName;
+        
+        // STATE TRANSITION: PendingPayment/PaymentSubmitted → PaymentSubmitted
         consultation.Payment.Status = PaymentStatus.Submitted;
         consultation.Payment.UpdatedAt = DateTime.UtcNow;
+        
+        consultation.Status = ConsultationStatus.PaymentSubmitted;
+        consultation.UpdatedAt = DateTime.UtcNow;
+
         await _db.SaveChangesAsync();
 
-        return Ok(new { message = "Payment proof uploaded. Pending admin verification.", proofFile = safeFileName });
+        return Ok(new 
+        { 
+            message = "Payment proof uploaded successfully. Pending admin verification.", 
+            proofFile = safeFileName,
+            consultationStatus = consultation.Status.ToString(),
+            paymentStatus = consultation.Payment.Status.ToString()
+        });
+    }
+
+    // GET /api/consultations/{id}/payment-proof — Admin only: view payment proof file
+    [HttpGet("{id}/payment-proof")]
+    [Authorize(Roles = "Admin")]
+    public async Task<IActionResult> ViewPaymentProof(int id)
+    {
+        var consultation = await _db.Consultations
+            .Include(c => c.Payment)
+            .AsNoTracking()
+            .FirstOrDefaultAsync(c => c.Id == id);
+
+        if (consultation == null) return NotFound(new { message = "Consultation not found." });
+        if (consultation.Payment == null) return NotFound(new { message = "No payment record." });
+        if (string.IsNullOrEmpty(consultation.Payment.ProofFilePath))
+            return NotFound(new { message = "No payment proof uploaded." });
+
+        var fullPath = Path.Combine(_env.ContentRootPath, consultation.Payment.ProofFilePath);
+        
+        if (!System.IO.File.Exists(fullPath))
+            return NotFound(new { message = "Payment proof file not found on server." });
+
+        var ext = Path.GetExtension(fullPath).ToLower();
+        var contentType = ext switch
+        {
+            ".jpg" => "image/jpeg",
+            ".jpeg" => "image/jpeg",
+            ".png" => "image/png",
+            ".pdf" => "application/pdf",
+            _ => "application/octet-stream"
+        };
+
+        var fileBytes = await System.IO.File.ReadAllBytesAsync(fullPath);
+        return File(fileBytes, contentType, consultation.Payment.ProofFileName ?? "payment-proof" + ext);
     }
 
     // POST /api/consultations/{id}/verify-payment — Admin: verify or reject payment
@@ -236,10 +294,20 @@ public class ConsultationsController : ControllerBase
         if (consultation == null) return NotFound(new { message = "Consultation not found." });
         if (consultation.Payment == null) return BadRequest(new { message = "No payment record." });
 
+        // Prevent state transitions from terminal states
+        if (consultation.Status == ConsultationStatus.Completed)
+            return BadRequest(new { message = "Cannot modify payment for completed consultation." });
+        
+        if (consultation.Status == ConsultationStatus.Cancelled)
+            return BadRequest(new { message = "Cannot modify payment for cancelled consultation." });
+
         var adminId = int.Parse(User.FindFirst(System.Security.Claims.ClaimTypes.NameIdentifier)!.Value);
 
         if (req.Action.ToLower() == "verify")
         {
+            // STATE TRANSITION: PaymentSubmitted → Confirmed
+            // CRITICAL BUSINESS RULE: Only transition to Confirmed if payment is Verified
+            
             consultation.Payment.Status = PaymentStatus.Verified;
             consultation.Payment.VerifiedAt = DateTime.UtcNow;
             consultation.Payment.VerifiedByAdminId = adminId;
@@ -250,7 +318,7 @@ public class ConsultationsController : ControllerBase
             consultation.ConfirmedAt = DateTime.UtcNow;
             consultation.UpdatedAt = DateTime.UtcNow;
 
-            // Generate receipt
+            // Generate receipt ONLY after payment verified AND consultation confirmed
             if (consultation.Receipt == null)
             {
                 var receiptNum = ReferenceGenerator.ReceiptNumber();
@@ -304,19 +372,40 @@ public class ConsultationsController : ControllerBase
             }
 
             await _db.SaveChangesAsync();
-            return Ok(new { message = "Payment verified. Appointment confirmed. Receipt generated.", receiptNumber = consultation.Receipt?.ReceiptNumber ?? consultation.Receipt?.ReceiptNumber });
+            
+            return Ok(new 
+            { 
+                message = "Payment verified. Appointment confirmed. Receipt generated.", 
+                receiptNumber = consultation.Receipt?.ReceiptNumber,
+                consultationStatus = consultation.Status.ToString(),
+                paymentStatus = consultation.Payment.Status.ToString()
+            });
         }
         else if (req.Action.ToLower() == "reject")
         {
+            // STATE TRANSITION: PaymentSubmitted → Cancelled (via Payment Rejection)
+            // CRITICAL BUSINESS RULE: Payment rejection automatically cancels the appointment
+            
             consultation.Payment.Status = PaymentStatus.Rejected;
+            consultation.Payment.RejectedAt = DateTime.UtcNow;
+            consultation.Payment.RejectedByAdminId = adminId;
             consultation.Payment.AdminRemarks = req.Remarks;
             consultation.Payment.UpdatedAt = DateTime.UtcNow;
 
-            consultation.Status = ConsultationStatus.PaymentRejected;
+            consultation.Status = ConsultationStatus.Cancelled;
+            consultation.CancelledAt = DateTime.UtcNow;
+            consultation.CancellationReason = $"Payment rejected by admin. Reason: {req.Remarks ?? "No reason provided"}";
             consultation.UpdatedAt = DateTime.UtcNow;
 
             await _db.SaveChangesAsync();
-            return Ok(new { message = "Payment rejected. Appointment not confirmed." });
+            
+            return Ok(new 
+            { 
+                message = "Payment rejected. Appointment automatically cancelled.", 
+                consultationStatus = consultation.Status.ToString(),
+                paymentStatus = consultation.Payment.Status.ToString(),
+                cancellationReason = consultation.CancellationReason
+            });
         }
 
         return BadRequest(new { message = "Action must be 'verify' or 'reject'." });
